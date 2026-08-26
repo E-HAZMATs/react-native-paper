@@ -96,6 +96,42 @@ exports[`Switch render renders disabled off 1`] = `
     </View>
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateX": -4,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 9999,
+          "height": 40,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 0,
+          "width": 40,
+        },
+        {
+          "left": 0,
+        },
+        {
+          "backgroundColor": "rgba(29, 27, 32, 1)",
+        },
+      ]
+    }
     style={
       [
         {
@@ -124,6 +160,39 @@ exports[`Switch render renders disabled off 1`] = `
     }
   />
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 16,
+          "top": 12,
+          "transform": [
+            {
+              "translateX": 8,
+            },
+          ],
+          "width": 16,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -166,6 +235,34 @@ exports[`Switch render renders disabled off 1`] = `
       }
     />
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(29, 27, 32, 1)",
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderRadius": 9999,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "opacity": 0.38,
+          },
+        ]
+      }
       style={
         [
           {
@@ -187,6 +284,36 @@ exports[`Switch render renders disabled off 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "borderColor": "rgba(98, 91, 113, 1)",
+          "borderRadius": 9999,
+          "borderWidth": 3,
+          "bottom": -1,
+          "left": -5,
+          "right": -5,
+          "top": -1,
+        },
+      ]
+    }
     style={
       [
         {
@@ -287,6 +414,42 @@ exports[`Switch render renders disabled on 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateX": 16,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 9999,
+          "height": 40,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 0,
+          "width": 40,
+        },
+        {
+          "left": 0,
+        },
+        {
+          "backgroundColor": "rgba(103, 80, 164, 1)",
+        },
+      ]
+    }
     style={
       [
         {
@@ -315,6 +478,39 @@ exports[`Switch render renders disabled on 1`] = `
     }
   />
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 24,
+          "top": 8,
+          "transform": [
+            {
+              "translateX": 24,
+            },
+          ],
+          "width": 24,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -357,6 +553,34 @@ exports[`Switch render renders disabled on 1`] = `
       }
     />
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(254, 247, 255, 1)",
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderRadius": 9999,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "opacity": 1,
+          },
+        ]
+      }
       style={
         [
           {
@@ -378,6 +602,36 @@ exports[`Switch render renders disabled on 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "borderColor": "rgba(98, 91, 113, 1)",
+          "borderRadius": 9999,
+          "borderWidth": 3,
+          "bottom": -1,
+          "left": -5,
+          "right": -5,
+          "top": -1,
+        },
+      ]
+    }
     style={
       [
         {
@@ -498,6 +752,42 @@ exports[`Switch render renders off 1`] = `
     </View>
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateX": -4,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 9999,
+          "height": 40,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 0,
+          "width": 40,
+        },
+        {
+          "left": 0,
+        },
+        {
+          "backgroundColor": "rgba(29, 27, 32, 1)",
+        },
+      ]
+    }
     style={
       [
         {
@@ -526,6 +816,39 @@ exports[`Switch render renders off 1`] = `
     }
   />
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 16,
+          "top": 12,
+          "transform": [
+            {
+              "translateX": 8,
+            },
+          ],
+          "width": 16,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -551,6 +874,34 @@ exports[`Switch render renders off 1`] = `
     }
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(121, 116, 126, 1)",
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderRadius": 9999,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "opacity": 1,
+          },
+        ]
+      }
       style={
         [
           {
@@ -572,6 +923,36 @@ exports[`Switch render renders off 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "borderColor": "rgba(98, 91, 113, 1)",
+          "borderRadius": 9999,
+          "borderWidth": 3,
+          "bottom": -1,
+          "left": -5,
+          "right": -5,
+          "top": -1,
+        },
+      ]
+    }
     style={
       [
         {
@@ -672,6 +1053,42 @@ exports[`Switch render renders on 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateX": 16,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 9999,
+          "height": 40,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 0,
+          "width": 40,
+        },
+        {
+          "left": 0,
+        },
+        {
+          "backgroundColor": "rgba(103, 80, 164, 1)",
+        },
+      ]
+    }
     style={
       [
         {
@@ -700,6 +1117,39 @@ exports[`Switch render renders on 1`] = `
     }
   />
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 24,
+          "top": 8,
+          "transform": [
+            {
+              "translateX": 24,
+            },
+          ],
+          "width": 24,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -725,6 +1175,34 @@ exports[`Switch render renders on 1`] = `
     }
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderRadius": 9999,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "opacity": 1,
+          },
+        ]
+      }
       style={
         [
           {
@@ -746,6 +1224,36 @@ exports[`Switch render renders on 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "borderColor": "rgba(98, 91, 113, 1)",
+          "borderRadius": 9999,
+          "borderWidth": 3,
+          "bottom": -1,
+          "left": -5,
+          "right": -5,
+          "top": -1,
+        },
+      ]
+    }
     style={
       [
         {
@@ -846,6 +1354,42 @@ exports[`Switch render renders with checked icon 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateX": 16,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 9999,
+          "height": 40,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 0,
+          "width": 40,
+        },
+        {
+          "left": 0,
+        },
+        {
+          "backgroundColor": "rgba(103, 80, 164, 1)",
+        },
+      ]
+    }
     style={
       [
         {
@@ -874,6 +1418,39 @@ exports[`Switch render renders with checked icon 1`] = `
     }
   />
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 24,
+          "top": 8,
+          "transform": [
+            {
+              "translateX": 24,
+            },
+          ],
+          "width": 24,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -899,6 +1476,34 @@ exports[`Switch render renders with checked icon 1`] = `
     }
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderRadius": 9999,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "opacity": 1,
+          },
+        ]
+      }
       style={
         [
           {
@@ -920,6 +1525,37 @@ exports[`Switch render renders with checked icon 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "transform": [
+            {
+              "translateX": 28,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "height": 16,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 12,
+          "width": 16,
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -990,6 +1626,36 @@ exports[`Switch render renders with checked icon 1`] = `
     </View>
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "borderColor": "rgba(98, 91, 113, 1)",
+          "borderRadius": 9999,
+          "borderWidth": 3,
+          "bottom": -1,
+          "left": -5,
+          "right": -5,
+          "top": -1,
+        },
+      ]
+    }
     style={
       [
         {
@@ -1090,6 +1756,42 @@ exports[`Switch render renders with per-state icons 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+          "transform": [
+            {
+              "translateX": 16,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 9999,
+          "height": 40,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 0,
+          "width": 40,
+        },
+        {
+          "left": 0,
+        },
+        {
+          "backgroundColor": "rgba(103, 80, 164, 1)",
+        },
+      ]
+    }
     style={
       [
         {
@@ -1118,6 +1820,39 @@ exports[`Switch render renders with per-state icons 1`] = `
     }
   />
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 24,
+          "top": 8,
+          "transform": [
+            {
+              "translateX": 24,
+            },
+          ],
+          "width": 24,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -1143,6 +1878,34 @@ exports[`Switch render renders with per-state icons 1`] = `
     }
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderRadius": 9999,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "opacity": 1,
+          },
+        ]
+      }
       style={
         [
           {
@@ -1164,6 +1927,37 @@ exports[`Switch render renders with per-state icons 1`] = `
     />
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "transform": [
+            {
+              "translateX": 28,
+            },
+          ],
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "height": 16,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "top": 12,
+          "width": 16,
+        },
+        {
+          "left": 0,
+        },
+      ]
+    }
     style={
       [
         {
@@ -1234,6 +2028,36 @@ exports[`Switch render renders with per-state icons 1`] = `
     </View>
   </View>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+        {
+          "borderColor": "rgba(98, 91, 113, 1)",
+          "borderRadius": 9999,
+          "borderWidth": 3,
+          "bottom": -1,
+          "left": -5,
+          "right": -5,
+          "top": -1,
+        },
+      ]
+    }
     style={
       [
         {

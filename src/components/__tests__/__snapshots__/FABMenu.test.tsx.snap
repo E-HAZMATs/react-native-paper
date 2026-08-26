@@ -56,7 +56,36 @@ exports[`renders FAB.Menu closed 1`] = `
     >
       <View
         aria-hidden={true}
+        collapsable={false}
         importantForAccessibility="no-hide-descendants"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 0,
+              "transform": [
+                {
+                  "scaleX": 0,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "none",
+            },
+          ]
+        }
         style={
           [
             {
@@ -162,6 +191,26 @@ exports[`renders FAB.Menu closed 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -196,6 +245,36 @@ exports[`renders FAB.Menu closed 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -221,7 +300,36 @@ exports[`renders FAB.Menu closed 1`] = `
       </View>
       <View
         aria-hidden={true}
+        collapsable={false}
         importantForAccessibility="no-hide-descendants"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 0,
+              "transform": [
+                {
+                  "scaleX": 0,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "none",
+            },
+          ]
+        }
         style={
           [
             {
@@ -327,6 +435,26 @@ exports[`renders FAB.Menu closed 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -361,6 +489,36 @@ exports[`renders FAB.Menu closed 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -403,23 +561,108 @@ exports[`renders FAB.Menu closed 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 16,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 1,
               "transform": [
                 {
                   "scale": 1,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "auto",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "auto",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 16,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -430,14 +673,137 @@ exports[`renders FAB.Menu closed 1`] = `
               "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
             },
-            {
-              "pointerEvents": "auto",
-            },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 16,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 16,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 16,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -447,12 +813,40 @@ exports[`renders FAB.Menu closed 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 16,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -473,6 +867,34 @@ exports[`renders FAB.Menu closed 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -549,6 +971,37 @@ exports[`renders FAB.Menu closed 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -561,10 +1014,10 @@ exports[`renders FAB.Menu closed 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -602,6 +1055,37 @@ exports[`renders FAB.Menu closed 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -614,10 +1098,10 @@ exports[`renders FAB.Menu closed 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -658,6 +1142,36 @@ exports[`renders FAB.Menu closed 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 21,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -673,7 +1187,7 @@ exports[`renders FAB.Menu closed 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 21,
                 "opacity": 0,
               },
             ]
@@ -741,7 +1255,36 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
     >
       <View
         aria-hidden={true}
+        collapsable={false}
         importantForAccessibility="no-hide-descendants"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 0,
+              "transform": [
+                {
+                  "scaleX": 0,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "none",
+            },
+          ]
+        }
         style={
           [
             {
@@ -847,6 +1390,26 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -881,6 +1444,36 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -906,7 +1499,36 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
       </View>
       <View
         aria-hidden={true}
+        collapsable={false}
         importantForAccessibility="no-hide-descendants"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 0,
+              "transform": [
+                {
+                  "scaleX": 0,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "none",
+            },
+          ]
+        }
         style={
           [
             {
@@ -1012,6 +1634,26 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -1046,6 +1688,36 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1088,23 +1760,108 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 16,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 0,
               "transform": [
                 {
                   "scale": 0,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "none",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 0,
+              "transform": [
+                {
+                  "scale": 0,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "none",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 16,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -1112,17 +1869,140 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                 "height": 3.33,
                 "width": 0,
               },
-              "shadowOpacity": 0,
+              "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
-            },
-            {
-              "pointerEvents": "none",
             },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 16,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 16,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 16,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -1132,12 +2012,40 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 16,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1158,6 +2066,34 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1234,6 +2170,37 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -1246,10 +2213,10 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -1287,6 +2254,37 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -1299,10 +2297,10 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -1343,6 +2341,36 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 21,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -1358,7 +2386,7 @@ exports[`renders FAB.Menu not expanded when trigger is not visible 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 21,
                 "opacity": 0,
               },
             ]
@@ -1426,7 +2454,36 @@ exports[`renders FAB.Menu open 1`] = `
     >
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -1532,6 +2589,26 @@ exports[`renders FAB.Menu open 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -1566,6 +2643,36 @@ exports[`renders FAB.Menu open 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1591,7 +2698,36 @@ exports[`renders FAB.Menu open 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -1697,6 +2833,26 @@ exports[`renders FAB.Menu open 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -1731,6 +2887,36 @@ exports[`renders FAB.Menu open 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1773,23 +2959,108 @@ exports[`renders FAB.Menu open 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 1,
               "transform": [
                 {
                   "scale": 1,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "auto",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "auto",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -1800,14 +3071,137 @@ exports[`renders FAB.Menu open 1`] = `
               "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
             },
-            {
-              "pointerEvents": "auto",
-            },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 28,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -1817,12 +3211,40 @@ exports[`renders FAB.Menu open 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 28,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1843,6 +3265,34 @@ exports[`renders FAB.Menu open 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1919,6 +3369,37 @@ exports[`renders FAB.Menu open 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -1931,10 +3412,10 @@ exports[`renders FAB.Menu open 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -1972,6 +3453,37 @@ exports[`renders FAB.Menu open 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -1984,10 +3496,10 @@ exports[`renders FAB.Menu open 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -2028,6 +3540,36 @@ exports[`renders FAB.Menu open 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 33,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -2043,7 +3585,7 @@ exports[`renders FAB.Menu open 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 33,
                 "opacity": 0,
               },
             ]
@@ -2111,7 +3653,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
     >
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -2217,6 +3788,26 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -2251,6 +3842,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -2276,7 +3897,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -2382,6 +4032,26 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -2416,6 +4086,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -2441,7 +4141,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -2547,6 +4276,26 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -2581,6 +4330,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -2606,7 +4385,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -2712,6 +4520,26 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -2746,6 +4574,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -2771,7 +4629,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -2877,6 +4764,26 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -2911,6 +4818,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -2936,7 +4873,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -3042,6 +5008,26 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -3076,6 +5062,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3118,23 +5134,108 @@ exports[`renders FAB.Menu with 6 items 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 1,
               "transform": [
                 {
                   "scale": 1,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "auto",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "auto",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -3145,14 +5246,137 @@ exports[`renders FAB.Menu with 6 items 1`] = `
               "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
             },
-            {
-              "pointerEvents": "auto",
-            },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 28,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -3162,12 +5386,40 @@ exports[`renders FAB.Menu with 6 items 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 28,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3188,6 +5440,34 @@ exports[`renders FAB.Menu with 6 items 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3264,6 +5544,37 @@ exports[`renders FAB.Menu with 6 items 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -3276,10 +5587,10 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -3317,6 +5628,37 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -3329,10 +5671,10 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -3373,6 +5715,36 @@ exports[`renders FAB.Menu with 6 items 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 33,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -3388,7 +5760,7 @@ exports[`renders FAB.Menu with 6 items 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 33,
                 "opacity": 0,
               },
             ]
@@ -3457,7 +5829,36 @@ exports[`renders FAB.Menu with center alignment 1`] = `
     >
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "center",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -3563,6 +5964,26 @@ exports[`renders FAB.Menu with center alignment 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -3597,6 +6018,36 @@ exports[`renders FAB.Menu with center alignment 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3622,7 +6073,36 @@ exports[`renders FAB.Menu with center alignment 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "center",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -3728,6 +6208,26 @@ exports[`renders FAB.Menu with center alignment 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -3762,6 +6262,36 @@ exports[`renders FAB.Menu with center alignment 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3804,23 +6334,108 @@ exports[`renders FAB.Menu with center alignment 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 1,
               "transform": [
                 {
                   "scale": 1,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "auto",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "auto",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -3831,14 +6446,137 @@ exports[`renders FAB.Menu with center alignment 1`] = `
               "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
             },
-            {
-              "pointerEvents": "auto",
-            },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 28,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -3848,12 +6586,40 @@ exports[`renders FAB.Menu with center alignment 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 28,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3874,6 +6640,34 @@ exports[`renders FAB.Menu with center alignment 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -3950,6 +6744,37 @@ exports[`renders FAB.Menu with center alignment 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -3962,10 +6787,10 @@ exports[`renders FAB.Menu with center alignment 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -4003,6 +6828,37 @@ exports[`renders FAB.Menu with center alignment 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -4015,10 +6871,10 @@ exports[`renders FAB.Menu with center alignment 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -4059,6 +6915,36 @@ exports[`renders FAB.Menu with center alignment 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 33,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -4074,7 +6960,7 @@ exports[`renders FAB.Menu with center alignment 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 33,
                 "opacity": 0,
               },
             ]
@@ -4142,7 +7028,36 @@ exports[`renders FAB.Menu with items having icons 1`] = `
     >
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -4276,6 +7191,28 @@ exports[`renders FAB.Menu with items having icons 1`] = `
                   email
                 </Text>
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      {
+                        "marginStart": 8,
+                      },
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       {
@@ -4311,6 +7248,36 @@ exports[`renders FAB.Menu with items having icons 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -4336,7 +7303,36 @@ exports[`renders FAB.Menu with items having icons 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "right",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -4470,6 +7466,28 @@ exports[`renders FAB.Menu with items having icons 1`] = `
                   bell
                 </Text>
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      {
+                        "marginStart": 8,
+                      },
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       {
@@ -4505,6 +7523,36 @@ exports[`renders FAB.Menu with items having icons 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -4547,23 +7595,108 @@ exports[`renders FAB.Menu with items having icons 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 1,
               "transform": [
                 {
                   "scale": 1,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "auto",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "auto",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -4574,14 +7707,137 @@ exports[`renders FAB.Menu with items having icons 1`] = `
               "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
             },
-            {
-              "pointerEvents": "auto",
-            },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 28,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -4591,12 +7847,40 @@ exports[`renders FAB.Menu with items having icons 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 28,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -4617,6 +7901,34 @@ exports[`renders FAB.Menu with items having icons 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -4693,6 +8005,37 @@ exports[`renders FAB.Menu with items having icons 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -4705,10 +8048,10 @@ exports[`renders FAB.Menu with items having icons 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -4746,6 +8089,37 @@ exports[`renders FAB.Menu with items having icons 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -4758,10 +8132,10 @@ exports[`renders FAB.Menu with items having icons 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -4802,6 +8176,36 @@ exports[`renders FAB.Menu with items having icons 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 33,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -4817,7 +8221,7 @@ exports[`renders FAB.Menu with items having icons 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 33,
                 "opacity": 0,
               },
             ]
@@ -4885,7 +8289,36 @@ exports[`renders FAB.Menu with start alignment 1`] = `
     >
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 4,
+              "transformOrigin": "left",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -4991,6 +8424,26 @@ exports[`renders FAB.Menu with start alignment 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -5025,6 +8478,36 @@ exports[`renders FAB.Menu with start alignment 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -5050,7 +8533,36 @@ exports[`renders FAB.Menu with start alignment 1`] = `
       </View>
       <View
         aria-hidden={false}
+        collapsable={false}
         importantForAccessibility="yes"
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
+              "opacity": 1,
+              "transform": [
+                {
+                  "scaleX": 1,
+                },
+              ],
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "marginBottom": 0,
+              "transformOrigin": "left",
+            },
+            {
+              "pointerEvents": "auto",
+            },
+          ]
+        }
         style={
           [
             {
@@ -5156,6 +8668,26 @@ exports[`renders FAB.Menu with start alignment 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
+                  jestAnimatedProps={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestAnimatedStyle={
+                    {
+                      "value": {},
+                    }
+                  }
+                  jestInlineStyle={
+                    [
+                      null,
+                      undefined,
+                      {
+                        "pointerEvents": "none",
+                      },
+                    ]
+                  }
                   style={
                     [
                       null,
@@ -5190,6 +8722,36 @@ exports[`renders FAB.Menu with start alignment 1`] = `
             </View>
           </View>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderWidth": 3,
+                  "bottom": -5,
+                  "left": -5,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": -5,
+                  "top": -5,
+                },
+                {
+                  "borderColor": "rgba(98, 91, 113, 1)",
+                  "borderRadius": 10004,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -5232,23 +8794,108 @@ exports[`renders FAB.Menu with start alignment 1`] = `
       }
     >
       <View
-        style={
-          [
-            undefined,
-            {
-              "transformOrigin": "center",
-            },
-            {
+        collapsable={false}
+        jestAnimatedProps={
+          {
+            "value": {},
+          }
+        }
+        jestAnimatedStyle={
+          {
+            "value": {
               "backgroundColor": "transparent",
-              "borderRadius": undefined,
-              "height": undefined,
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
+              "height": 56,
               "opacity": 1,
               "transform": [
                 {
                   "scale": 1,
                 },
               ],
-              "width": undefined,
+              "width": 56,
+            },
+          }
+        }
+        jestInlineStyle={
+          [
+            {
+              "transitionDuration": 150,
+              "transitionProperty": [
+                "shadowOpacity",
+                "shadowOffset",
+                "shadowRadius",
+              ],
+              "transitionTimingFunction": "ease-in-out",
+            },
+            [
+              undefined,
+              {
+                "transformOrigin": "center",
+              },
+              {
+                "pointerEvents": "auto",
+              },
+            ],
+            {
+              "shadowColor": "rgba(0, 0, 0, 1)",
+              "shadowOffset": {
+                "height": 3.33,
+                "width": 0,
+              },
+              "shadowOpacity": 0.19,
+              "shadowRadius": 4.75,
+            },
+          ]
+        }
+        style={
+          [
+            {},
+            undefined,
+            {
+              "transformOrigin": "center",
+            },
+            {
+              "height": 56,
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+              "width": 56,
+            },
+            {
+              "pointerEvents": "auto",
+            },
+            {
+              "backgroundColor": "transparent",
+              "borderBottomEndRadius": undefined,
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderBottomStartRadius": undefined,
+              "borderCurve": undefined,
+              "borderEndEndRadius": undefined,
+              "borderEndStartRadius": undefined,
+              "borderRadius": 28,
+              "borderStartEndRadius": undefined,
+              "borderStartStartRadius": undefined,
+              "borderTopEndRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "borderTopStartRadius": undefined,
             },
             {
               "shadowColor": "rgba(0, 0, 0, 1)",
@@ -5259,14 +8906,137 @@ exports[`renders FAB.Menu with start alignment 1`] = `
               "shadowOpacity": 0.19,
               "shadowRadius": 4.75,
             },
-            {
-              "pointerEvents": "auto",
-            },
           ]
         }
         testID="fab-shell-container"
       >
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {
+                "transitionDuration": 150,
+                "transitionProperty": [
+                  "shadowOpacity",
+                  "shadowOffset",
+                  "shadowRadius",
+                ],
+                "transitionTimingFunction": "ease-in-out",
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          style={
+            [
+              {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "pointerEvents": "none",
+              },
+              {},
+              {
+                "backgroundColor": "transparent",
+                "borderBottomEndRadius": undefined,
+                "borderBottomLeftRadius": undefined,
+                "borderBottomRightRadius": undefined,
+                "borderBottomStartRadius": undefined,
+                "borderCurve": undefined,
+                "borderEndEndRadius": undefined,
+                "borderEndStartRadius": undefined,
+                "borderRadius": 28,
+                "borderStartEndRadius": undefined,
+                "borderStartStartRadius": undefined,
+                "borderTopEndRadius": undefined,
+                "borderTopLeftRadius": undefined,
+                "borderTopRightRadius": undefined,
+                "borderTopStartRadius": undefined,
+              },
+              {
+                "shadowColor": "rgba(0, 0, 0, 1)",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.039,
+                "shadowRadius": 1.5,
+              },
+            ]
+          }
+          testID="fab-shell-container-shadow-layer"
+        />
+        <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "transparent",
+                "borderRadius": 28,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "height": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+            ]
+          }
           style={
             [
               {
@@ -5276,12 +9046,40 @@ exports[`renders FAB.Menu with start alignment 1`] = `
               },
               {
                 "backgroundColor": "transparent",
-                "borderRadius": undefined,
+                "borderRadius": 28,
               },
             ]
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(234, 221, 255, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -5302,6 +9100,34 @@ exports[`renders FAB.Menu with start alignment 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "pointerEvents": "none",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -5378,6 +9204,37 @@ exports[`renders FAB.Menu with start alignment 1`] = `
               }
             >
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 0,
+                      "transform": [
+                        {
+                          "translateX": 16,
+                        },
+                        {
+                          "translateY": 16,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -5390,10 +9247,10 @@ exports[`renders FAB.Menu with start alignment 1`] = `
                       "opacity": 0,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 16,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 16,
                         },
                       ],
                     },
@@ -5431,6 +9288,37 @@ exports[`renders FAB.Menu with start alignment 1`] = `
                 </Text>
               </View>
               <View
+                collapsable={false}
+                jestAnimatedProps={
+                  {
+                    "value": {},
+                  }
+                }
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "opacity": 1,
+                      "transform": [
+                        {
+                          "translateX": 18,
+                        },
+                        {
+                          "translateY": 18,
+                        },
+                      ],
+                    },
+                  }
+                }
+                jestInlineStyle={
+                  [
+                    {
+                      "left": 0,
+                      "pointerEvents": "none",
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                  ]
+                }
                 style={
                   [
                     {
@@ -5443,10 +9331,10 @@ exports[`renders FAB.Menu with start alignment 1`] = `
                       "opacity": 1,
                       "transform": [
                         {
-                          "translateX": NaN,
+                          "translateX": 18,
                         },
                         {
-                          "translateY": NaN,
+                          "translateY": 18,
                         },
                       ],
                     },
@@ -5487,6 +9375,36 @@ exports[`renders FAB.Menu with start alignment 1`] = `
           </View>
         </View>
         <View
+          collapsable={false}
+          jestAnimatedProps={
+            {
+              "value": {},
+            }
+          }
+          jestAnimatedStyle={
+            {
+              "value": {
+                "borderRadius": 33,
+                "opacity": 0,
+              },
+            }
+          }
+          jestInlineStyle={
+            [
+              {
+                "borderWidth": 3,
+                "bottom": -5,
+                "left": -5,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "right": -5,
+                "top": -5,
+              },
+              {
+                "borderColor": "rgba(98, 91, 113, 1)",
+              },
+            ]
+          }
           style={
             [
               {
@@ -5502,7 +9420,7 @@ exports[`renders FAB.Menu with start alignment 1`] = `
                 "borderColor": "rgba(98, 91, 113, 1)",
               },
               {
-                "borderRadius": NaN,
+                "borderRadius": 33,
                 "opacity": 0,
               },
             ]

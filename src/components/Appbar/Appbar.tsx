@@ -1,18 +1,21 @@
 import * as React from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import type { ColorValue, StyleProp, ViewProps, ViewStyle } from 'react-native';
 
 import AppbarContent from './AppbarContent';
 import {
   getAppbarBackgroundColor,
+  getAppbarBorders,
   modeAppbarHeight,
   renderAppbarContent,
   filterAppbarActions,
 } from './utils';
 import type { AppbarModes, AppbarChildProps } from './utils';
 import { useInternalTheme } from '../../core/theming';
-import type { Elevation, ThemeProp } from '../../types';
+import type { ThemeProp } from '../../types';
 import Surface from '../Surface';
+
+const APPBAR_HORIZONTAL_PADDING = 4;
 
 export type Props = Omit<Partial<ViewProps>, 'style'> & {
   /**
@@ -51,7 +54,7 @@ export type Props = Omit<Partial<ViewProps>, 'style'> & {
    * @optional
    */
   theme?: ThemeProp;
-  style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+  style?: StyleProp<ViewStyle>;
 };
 
 /**
@@ -145,29 +148,25 @@ const Appbar = ({
   dark,
   style,
   mode = 'small',
-  elevated,
+  elevated = false,
   safeAreaInsets,
   theme: themeOverrides,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
   const flattenedStyle = StyleSheet.flatten(style);
-  const {
-    backgroundColor: customBackground,
-    elevation = elevated ? 2 : 0,
-    ...restStyle
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
-  } = (flattenedStyle || {}) as Exclude<typeof flattenedStyle, number> & {
-    elevation?: Elevation;
+  const { backgroundColor: customBackground, ...restStyle } = (flattenedStyle ||
+    {}) as Exclude<typeof flattenedStyle, number> & {
     backgroundColor?: ColorValue;
   };
 
   const backgroundColor = getAppbarBackgroundColor(
     theme,
-    elevation,
-    customBackground,
-    elevated
+    elevated,
+    customBackground
   );
+
+  const borderRadius = getAppbarBorders(restStyle);
 
   const isMode = (modeToCompare: AppbarModes) => {
     return mode === modeToCompare;
@@ -210,23 +209,27 @@ const Appbar = ({
   const insets = {
     paddingBottom: safeAreaInsets?.bottom,
     paddingTop: safeAreaInsets?.top,
-    paddingLeft: safeAreaInsets?.left,
-    paddingRight: safeAreaInsets?.right,
+    paddingLeft: safeAreaInsets?.left
+      ? safeAreaInsets.left + APPBAR_HORIZONTAL_PADDING
+      : APPBAR_HORIZONTAL_PADDING,
+    paddingRight: safeAreaInsets?.right
+      ? safeAreaInsets.right + APPBAR_HORIZONTAL_PADDING
+      : APPBAR_HORIZONTAL_PADDING,
   };
 
   return (
     <Surface
+      {...borderRadius}
+      backgroundColor={backgroundColor}
       style={[
-        { backgroundColor },
-        styles.appbar,
         {
           height: modeAppbarHeight[mode],
         },
+        styles.appbar,
         insets,
         restStyle,
       ]}
-      elevation={elevation}
-      container
+      elevation={elevated ? 2 : 0}
       {...rest}
     >
       {shouldAddLeftSpacing ? <View style={spacingStyle} /> : null}
@@ -308,7 +311,6 @@ const styles = StyleSheet.create({
   appbar: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 4,
   },
   v3Spacing: {
     width: 52,

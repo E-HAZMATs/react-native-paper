@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, Platform, StyleSheet, TextInput, View } from 'react-native';
+import { Platform, StyleSheet, TextInput, View } from 'react-native';
 import type {
   ColorValue,
   GestureResponderEvent,
@@ -8,6 +8,8 @@ import type {
   TextStyle,
   ViewStyle,
 } from 'react-native';
+
+import type { AnimatedStyle } from 'react-native-reanimated';
 
 import ActivityIndicator from './ActivityIndicator';
 import Divider from './Divider';
@@ -111,12 +113,12 @@ export type Props = TextInputProps & {
    * @supported Available in v5.x with theme version 3
    * Changes Searchbar shadow and background on iOS and Android.
    */
-  elevation?: 0 | 1 | 2 | 3 | 4 | 5 | Animated.Value;
+  elevation?: 0 | 1 | 2 | 3 | 4 | 5;
   /**
    * Set style of the TextInput component inside the searchbar
    */
   inputStyle?: StyleProp<TextStyle>;
-  style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+  style?: StyleProp<AnimatedStyle<ViewStyle>>;
   /**
    * Custom flag for replacing clear button with activity indicator.
    */
@@ -188,8 +190,10 @@ const Searchbar = ({
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
+
   const { direction } = useLocale();
   const { colors, fonts } = theme;
+
   const root = React.useRef<TextInput>(null);
 
   React.useImperativeHandle(ref, () => ({
@@ -230,18 +234,11 @@ const Searchbar = ({
 
   return (
     <Surface
-      style={[
-        { borderRadius: theme.shapes.corner.extraSmall },
-        {
-          backgroundColor: theme.colors.surfaceContainerHigh,
-          borderRadius: isBarMode ? theme.shapes.corner.extraLarge : cornerNone,
-        },
-        styles.container,
-        style,
-      ]}
+      backgroundColor={theme.colors.surfaceContainerHigh}
+      borderRadius={isBarMode ? theme.shapes.corner.extraLarge : cornerNone}
+      style={[styles.container, style]}
       testID={`${testID}-container`}
       elevation={elevation}
-      container
       theme={theme}
     >
       <IconButton
