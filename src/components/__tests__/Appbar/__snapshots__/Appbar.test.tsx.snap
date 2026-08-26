@@ -1124,20 +1124,52 @@ exports[`Appbar passes additional props to AppbarBackAction, AppbarContent and A
         >
           <View
             collapsable={false}
-            style={
+            jestAnimatedProps={
               {
-                "bottom": 0,
-                "left": 0,
-                "opacity": 1,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "transform": [
-                  {
-                    "rotate": "0deg",
-                  },
-                ],
+                "value": {},
               }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                  "transform": [
+                    {
+                      "rotate": "0deg",
+                    },
+                  ],
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+              ]
+            }
+            style={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "opacity": 1,
+                  "transform": [
+                    {
+                      "rotate": "0deg",
+                    },
+                  ],
+                },
+              ]
             }
             testID="cross-fade-icon-current"
           >
@@ -1376,20 +1408,52 @@ exports[`Appbar passes additional props to AppbarBackAction, AppbarContent and A
         >
           <View
             collapsable={false}
-            style={
+            jestAnimatedProps={
               {
-                "bottom": 0,
-                "left": 0,
-                "opacity": 1,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "transform": [
-                  {
-                    "rotate": "0deg",
-                  },
-                ],
+                "value": {},
               }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                  "transform": [
+                    {
+                      "rotate": "0deg",
+                    },
+                  ],
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+              ]
+            }
+            style={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "opacity": 1,
+                  "transform": [
+                    {
+                      "rotate": "0deg",
+                    },
+                  ],
+                },
+              ]
             }
             testID="cross-fade-icon-current"
           >

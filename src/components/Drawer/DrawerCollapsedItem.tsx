@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, Platform, Pressable, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, View } from 'react-native';
 import type {
   GestureResponderEvent,
   NativeSyntheticEvent,
@@ -8,6 +8,15 @@ import type {
   ViewProps,
   ViewStyle,
 } from 'react-native';
+
+import Animated, {
+  Easing,
+  ReduceMotion,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+  type AnimatedStyle,
+} from 'react-native-reanimated';
 
 import { useInternalTheme } from '../../core/theming';
 import type { ThemeProp } from '../../types';
@@ -55,7 +64,7 @@ export type Props = ViewProps & {
    * Accessibility label for the button. This is read by the screen reader when the user taps the button.
    */
   'aria-label'?: string;
-  style?: StyleProp<ViewStyle>;
+  style?: StyleProp<AnimatedStyle<ViewStyle>>;
   /**
    * @optional
    */
@@ -112,22 +121,20 @@ const DrawerCollapsedItem = ({
 
   const [numOfLines, setNumOfLines] = React.useState(1);
 
-  const { current: animScale } = React.useRef<Animated.Value>(
-    new Animated.Value(active ? 1 : 0.5)
-  );
+  const outlineScale = useSharedValue(active ? 1 : 0.5);
 
   React.useEffect(() => {
     if (!active) {
-      animScale.setValue(0.5);
+      outlineScale.value = 0.5;
     }
-  }, [animScale, active]);
+  }, [active, outlineScale]);
 
   const handlePressOut = () => {
-    Animated.timing(animScale, {
-      toValue: 1,
+    outlineScale.value = withTiming(1, {
       duration: 150 * scale,
-      useNativeDriver: true,
-    }).start();
+      easing: Easing.inOut(Easing.ease),
+      reduceMotion: ReduceMotion.Never,
+    });
   };
 
   const iconPadding = ((!label ? itemSize : outlineHeight) - iconSize) / 2;
@@ -135,9 +142,11 @@ const DrawerCollapsedItem = ({
   const backgroundColor = active
     ? theme.colors.secondaryContainer
     : 'transparent';
+
   const labelColor = active
     ? theme.colors.onSurface
     : theme.colors.onSurfaceVariant;
+
   const iconColor = active
     ? theme.colors.onSecondaryContainer
     : theme.colors.onSurfaceVariant;
@@ -161,6 +170,12 @@ const DrawerCollapsedItem = ({
   const icon =
     !active && unfocusedIcon !== undefined ? unfocusedIcon : focusedIcon;
 
+  const animatedOutlineStyle = useAnimatedStyle(() => ({
+    transform: [
+      label ? { scaleX: outlineScale.value } : { scale: outlineScale.value },
+    ],
+  }));
+
   return (
     <View {...rest}>
       <Pressable
@@ -177,16 +192,8 @@ const DrawerCollapsedItem = ({
             style={[
               styles.outline,
               !label && styles.roundedOutline,
-              {
-                transform: [
-                  label
-                    ? {
-                        scaleX: animScale,
-                      }
-                    : { scale: animScale },
-                ],
-                backgroundColor,
-              },
+              { backgroundColor },
+              animatedOutlineStyle,
               style,
             ]}
             testID={`${testID}-outline`}

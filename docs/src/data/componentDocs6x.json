@@ -302,19 +302,19 @@
           "style": {
             "required": false,
             "tsType": {
-              "name": "Animated.WithAnimatedValue",
+              "name": "StyleProp",
               "elements": [
                 {
-                  "name": "StyleProp",
+                  "name": "AnimatedStyle",
                   "elements": [
                     {
                       "name": "ViewStyle"
                     }
                   ],
-                  "raw": "StyleProp<ViewStyle>"
+                  "raw": "AnimatedStyle<ViewStyle>"
                 }
               ],
-              "raw": "Animated.WithAnimatedValue<StyleProp<ViewStyle>>"
+              "raw": "StyleProp<AnimatedStyle<ViewStyle>>"
             },
             "description": ""
           },
@@ -414,19 +414,19 @@
           "style": {
             "required": false,
             "tsType": {
-              "name": "Animated.WithAnimatedValue",
+              "name": "StyleProp",
               "elements": [
                 {
-                  "name": "StyleProp",
+                  "name": "AnimatedStyle",
                   "elements": [
                     {
                       "name": "ViewStyle"
                     }
                   ],
-                  "raw": "StyleProp<ViewStyle>"
+                  "raw": "AnimatedStyle<ViewStyle>"
                 }
               ],
-              "raw": "Animated.WithAnimatedValue<StyleProp<ViewStyle>>"
+              "raw": "StyleProp<AnimatedStyle<ViewStyle>>"
             },
             "description": ""
           },
@@ -5785,10 +5785,16 @@
               "name": "StyleProp",
               "elements": [
                 {
-                  "name": "ViewStyle"
+                  "name": "AnimatedStyle",
+                  "elements": [
+                    {
+                      "name": "ViewStyle"
+                    }
+                  ],
+                  "raw": "AnimatedStyle<ViewStyle>"
                 }
               ],
-              "raw": "StyleProp<ViewStyle>"
+              "raw": "StyleProp<AnimatedStyle<ViewStyle>>"
             },
             "description": ""
           },
@@ -11339,6 +11345,14 @@
             },
             "description": "Corner curve of the Surface on iOS."
           },
+          "children": {
+            "required": true,
+            "tsType": {
+              "name": "ReactReactNode",
+              "raw": "React.ReactNode"
+            },
+            "description": "Content of the `Surface`."
+          },
           "style": {
             "required": false,
             "tsType": {
@@ -11406,14 +11420,6 @@
               "name": "ThemeProp"
             },
             "description": ""
-          },
-          "children": {
-            "required": true,
-            "tsType": {
-              "name": "ReactReactNode",
-              "raw": "React.ReactNode"
-            },
-            "description": "Content of the `Surface`."
           },
           "testID": {
             "required": false,

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import type {
   GestureResponderEvent,
   PressableAndroidRippleConfig,
@@ -7,6 +7,13 @@ import type {
   TextStyle,
   ViewStyle,
 } from 'react-native';
+
+import Animated, {
+  ReduceMotion,
+  useAnimatedStyle,
+  useSharedValue,
+  withSpring,
+} from 'react-native-reanimated';
 
 import {
   getSegmentedButtonBorderRadius,
@@ -20,6 +27,14 @@ import Icon from '../Icon';
 import TouchableRipple from '../TouchableRipple/TouchableRipple';
 import type { Props as TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
 import Text from '../Typography/Text';
+
+const springConfig = {
+  stiffness: 230.2,
+  damping: 22,
+  mass: 1,
+  energyThreshold: 6e-9,
+  reduceMotion: ReduceMotion.Never,
+};
 
 export type Props = {
   /**
@@ -122,24 +137,27 @@ const SegmentedButtonItem = ({
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
 
-  const checkScale = React.useRef(new Animated.Value(0)).current;
+  const checkScale = useSharedValue(0);
 
   React.useEffect(() => {
     if (!showSelectedCheck) {
       return;
     }
-    if (checked) {
-      Animated.spring(checkScale, {
-        toValue: 1,
-        useNativeDriver: true,
-      }).start();
-    } else {
-      Animated.spring(checkScale, {
-        toValue: 0,
-        useNativeDriver: true,
-      }).start();
-    }
-  }, [checked, checkScale, showSelectedCheck]);
+
+    checkScale.value = withSpring(checked ? 1 : 0, springConfig);
+  }, [checkScale, checked, showSelectedCheck]);
+
+  const iconAnimationStyle = useAnimatedStyle(() =>
+    label
+      ? {
+          transform: [{ scale: 1 - checkScale.value }],
+        }
+      : {}
+  );
+
+  const checkAnimationStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: checkScale.value }],
+  }));
 
   const { borderColor, textColor, textOpacity, borderWidth, backgroundColor } =
     getSegmentedButtonColors({
@@ -151,26 +169,19 @@ const SegmentedButtonItem = ({
     });
 
   const borderRadius = theme.shapes.corner.largeIncreased;
+
   const segmentBorderRadius = getSegmentedButtonBorderRadius({
     theme,
     segment,
   });
+
   const showIcon = !icon ? false : label && checked ? !showSelectedCheck : true;
   const showCheckedIcon = checked && showSelectedCheck;
 
   const iconSize = 18;
+
   const iconStyle = {
     marginRight: label ? 5 : showCheckedIcon ? 3 : 0,
-    ...(label && {
-      transform: [
-        {
-          scale: checkScale.interpolate({
-            inputRange: [0, 1],
-            outputRange: [1, 0],
-          }),
-        },
-      ],
-    }),
   };
 
   const buttonStyle: ViewStyle = {
@@ -180,11 +191,14 @@ const SegmentedButtonItem = ({
     borderRadius,
     ...segmentBorderRadius,
   };
+
   const paddingVertical = getSegmentedButtonDensityPadding({ density });
+
   const rippleStyle: ViewStyle = {
     borderRadius,
     ...segmentBorderRadius,
   };
+
   const labelTextStyle: TextStyle = {
     ...theme.fonts.labelLarge,
     color: textColor,
@@ -212,13 +226,16 @@ const SegmentedButtonItem = ({
           {showCheckedIcon ? (
             <Animated.View
               testID={`${testID}-check-icon`}
-              style={[iconStyle, { transform: [{ scale: checkScale }] }]}
+              style={[iconStyle, checkAnimationStyle]}
             >
               <Icon source={'check'} size={iconSize} color={textColor} />
             </Animated.View>
           ) : null}
           {showIcon ? (
-            <Animated.View testID={`${testID}-icon`} style={iconStyle}>
+            <Animated.View
+              testID={`${testID}-icon`}
+              style={[iconStyle, iconAnimationStyle]}
+            >
               <Icon source={icon} size={iconSize} color={textColor} />
             </Animated.View>
           ) : null}

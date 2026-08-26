@@ -143,9 +143,7 @@ exports[`can render leading checkbox control 1`] = `
             }
             jestAnimatedStyle={
               {
-                "value": {
-                  "opacity": 1,
-                },
+                "value": {},
               }
             }
             jestInlineStyle={
@@ -161,6 +159,17 @@ exports[`can render leading checkbox control 1`] = `
                 },
                 {
                   "borderColor": "rgba(73, 69, 79, 1)",
+                  "opacity": 1,
+                  "transitionDuration": 100,
+                  "transitionProperty": [
+                    "opacity",
+                  ],
+                  "transitionTimingFunction": CubicBezierEasing {
+                    "x1": 0.2,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 1,
+                  },
                 },
               ]
             }
@@ -178,8 +187,6 @@ exports[`can render leading checkbox control 1`] = `
                 },
                 {
                   "borderColor": "rgba(73, 69, 79, 1)",
-                },
-                {
                   "opacity": 1,
                 },
               ]
@@ -194,9 +201,7 @@ exports[`can render leading checkbox control 1`] = `
             }
             jestAnimatedStyle={
               {
-                "value": {
-                  "opacity": 0,
-                },
+                "value": {},
               }
             }
             jestInlineStyle={
@@ -211,6 +216,17 @@ exports[`can render leading checkbox control 1`] = `
                 },
                 {
                   "backgroundColor": "rgba(103, 80, 164, 1)",
+                  "opacity": 0,
+                  "transitionDuration": 100,
+                  "transitionProperty": [
+                    "opacity",
+                  ],
+                  "transitionTimingFunction": CubicBezierEasing {
+                    "x1": 0.2,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 1,
+                  },
                 },
               ]
             }
@@ -227,8 +243,6 @@ exports[`can render leading checkbox control 1`] = `
                 },
                 {
                   "backgroundColor": "rgba(103, 80, 164, 1)",
-                },
-                {
                   "opacity": 0,
                 },
               ]
@@ -243,10 +257,7 @@ exports[`can render leading checkbox control 1`] = `
             }
             jestAnimatedStyle={
               {
-                "value": {
-                  "opacity": 0,
-                  "width": 0,
-                },
+                "value": {},
               }
             }
             jestInlineStyle={
@@ -257,6 +268,21 @@ exports[`can render leading checkbox control 1`] = `
                   "overflow": "hidden",
                   "position": "absolute",
                   "top": 0,
+                },
+                {
+                  "opacity": 0,
+                  "transitionDuration": 150,
+                  "transitionProperty": [
+                    "width",
+                    "opacity",
+                  ],
+                  "transitionTimingFunction": CubicBezierEasing {
+                    "x1": 0.2,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 1,
+                  },
+                  "width": 0,
                 },
               ]
             }
@@ -541,9 +567,7 @@ exports[`renders unchecked 1`] = `
             }
             jestAnimatedStyle={
               {
-                "value": {
-                  "opacity": 1,
-                },
+                "value": {},
               }
             }
             jestInlineStyle={
@@ -559,6 +583,17 @@ exports[`renders unchecked 1`] = `
                 },
                 {
                   "borderColor": "rgba(73, 69, 79, 1)",
+                  "opacity": 1,
+                  "transitionDuration": 100,
+                  "transitionProperty": [
+                    "opacity",
+                  ],
+                  "transitionTimingFunction": CubicBezierEasing {
+                    "x1": 0.2,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 1,
+                  },
                 },
               ]
             }
@@ -576,8 +611,6 @@ exports[`renders unchecked 1`] = `
                 },
                 {
                   "borderColor": "rgba(73, 69, 79, 1)",
-                },
-                {
                   "opacity": 1,
                 },
               ]
@@ -592,9 +625,7 @@ exports[`renders unchecked 1`] = `
             }
             jestAnimatedStyle={
               {
-                "value": {
-                  "opacity": 0,
-                },
+                "value": {},
               }
             }
             jestInlineStyle={
@@ -609,6 +640,17 @@ exports[`renders unchecked 1`] = `
                 },
                 {
                   "backgroundColor": "rgba(103, 80, 164, 1)",
+                  "opacity": 0,
+                  "transitionDuration": 100,
+                  "transitionProperty": [
+                    "opacity",
+                  ],
+                  "transitionTimingFunction": CubicBezierEasing {
+                    "x1": 0.2,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 1,
+                  },
                 },
               ]
             }
@@ -625,8 +667,6 @@ exports[`renders unchecked 1`] = `
                 },
                 {
                   "backgroundColor": "rgba(103, 80, 164, 1)",
-                },
-                {
                   "opacity": 0,
                 },
               ]
@@ -641,10 +681,7 @@ exports[`renders unchecked 1`] = `
             }
             jestAnimatedStyle={
               {
-                "value": {
-                  "opacity": 0,
-                  "width": 0,
-                },
+                "value": {},
               }
             }
             jestInlineStyle={
@@ -655,6 +692,21 @@ exports[`renders unchecked 1`] = `
                   "overflow": "hidden",
                   "position": "absolute",
                   "top": 0,
+                },
+                {
+                  "opacity": 0,
+                  "transitionDuration": 150,
+                  "transitionProperty": [
+                    "width",
+                    "opacity",
+                  ],
+                  "transitionTimingFunction": CubicBezierEasing {
+                    "x1": 0.2,
+                    "x2": 0,
+                    "y1": 0,
+                    "y2": 1,
+                  },
+                  "width": 0,
                 },
               ]
             }
