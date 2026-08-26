@@ -207,7 +207,7 @@ const ThemeBasedOnSourceColor = () => {
   return (
     <PaperProvider theme={theme[colorScheme]}>
       <View style={styles.screen}>
-        <Appbar.Header elevated>
+        <Appbar.Header>
           <Appbar.BackAction onPress={() => navigation.goBack()} />
           <Appbar.Content title={headerTitle} />
         </Appbar.Header>

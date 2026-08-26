@@ -47,7 +47,7 @@ const AppbarExample = () => {
         <Appbar.Header
           style={showCustomColor ? styles.customColor : null}
           mode={appbarMode}
-          elevated={showElevated}
+          elevation={showElevated ? 2 : 0}
         >
           {showLeftIcon && (
             <Appbar.BackAction onPress={() => navigation.goBack()} />

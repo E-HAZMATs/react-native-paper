@@ -1,17 +1,20 @@
 import * as React from 'react';
-import { Animated, Easing, StyleSheet, Pressable, View } from 'react-native';
+import { StyleSheet, Pressable, View } from 'react-native';
 import type { StyleProp, ViewStyle } from 'react-native';
 
+import Animated, {
+  cubicBezier,
+  type AnimatedStyle,
+} from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import useLatestCallback from 'use-latest-callback';
 
 import Surface from './Surface';
 import { useInternalTheme } from '../core/theming';
 import { tokens } from '../theme/tokens';
-import type { ThemeProp } from '../types';
+import type { Elevation, ThemeProp } from '../types';
 import { addEventListener } from '../utils/addEventListener';
 import { BackHandler } from '../utils/BackHandler/BackHandler';
-import useAnimatedValue from '../utils/useAnimatedValue';
 
 const scrimAlpha = tokens.md.sys.scrim.alpha;
 
@@ -43,7 +46,11 @@ export type Props = {
   /**
    * Style for the content of the modal
    */
-  contentContainerStyle?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+  contentContainerStyle?: StyleProp<AnimatedStyle<ViewStyle>>;
+  /**
+   * Elevation level of the modal content. Defaults to level 1.
+   */
+  elevation?: Elevation;
   /**
    * Style for the wrapper of the modal.
    * Use this prop to change the default wrapper style or to override safe area insets with marginTop and marginBottom.
@@ -104,55 +111,44 @@ function Modal({
   onDismiss = () => {},
   children,
   contentContainerStyle,
+  elevation,
   style,
   theme: themeOverrides,
   testID = 'modal',
 }: Props) {
   const theme = useInternalTheme(themeOverrides);
+
   const onDismissCallback = useLatestCallback(onDismiss);
-  const { scale } = theme.animation;
+
   const { top, bottom } = useSafeAreaInsets();
-  const opacity = useAnimatedValue(visible ? 1 : 0);
+
   const [visibleInternal, setVisibleInternal] = React.useState(visible);
+  const [animatedVisible, setAnimatedVisible] = React.useState(visible);
 
-  const showModalAnimation = React.useCallback(() => {
-    Animated.timing(opacity, {
-      toValue: 1,
-      duration: scale * DEFAULT_DURATION,
-      easing: Easing.out(Easing.cubic),
-      useNativeDriver: true,
-    }).start();
-  }, [opacity, scale]);
+  if (visible && !visibleInternal) {
+    setVisibleInternal(true);
+  }
 
-  const hideModalAnimation = React.useCallback(() => {
-    Animated.timing(opacity, {
-      toValue: 0,
-      duration: scale * DEFAULT_DURATION,
-      easing: Easing.out(Easing.cubic),
-      useNativeDriver: true,
-    }).start(({ finished }) => {
-      if (!finished) {
-        return;
-      }
-
-      setVisibleInternal(false);
-    });
-  }, [opacity, scale]);
+  const { scale } = theme.animation;
 
   React.useEffect(() => {
-    if (visibleInternal === visible) {
-      return;
+    const timeout = setTimeout(() => setAnimatedVisible(visible), 0);
+
+    return () => clearTimeout(timeout);
+  }, [visible]);
+
+  React.useEffect(() => {
+    if (visible || !visibleInternal) {
+      return undefined;
     }
 
-    if (!visibleInternal && visible) {
-      setVisibleInternal(true);
-      return showModalAnimation();
-    }
+    const timeout = setTimeout(
+      () => setVisibleInternal(false),
+      scale * DEFAULT_DURATION
+    );
 
-    if (visibleInternal && !visible) {
-      return hideModalAnimation();
-    }
-  }, [visible, showModalAnimation, hideModalAnimation, visibleInternal]);
+    return () => clearTimeout(timeout);
+  }, [scale, visible, visibleInternal]);
 
   React.useEffect(() => {
     if (!visible) {
@@ -172,10 +168,26 @@ function Modal({
       'hardwareBackPress',
       onHardwareBackPress
     );
+
     return () => subscription.remove();
   }, [dismissable, dismissableBackButton, onDismissCallback, visible]);
 
-  if (!visibleInternal) {
+  const transitionStyle: AnimatedStyle<ViewStyle> = {
+    transitionDuration: scale * DEFAULT_DURATION,
+    transitionProperty: 'opacity',
+    transitionTimingFunction: cubicBezier(1 / 3, 1, 2 / 3, 1),
+  };
+
+  const backdropStyle: AnimatedStyle<ViewStyle> = {
+    backgroundColor: theme.colors.scrim,
+    opacity: animatedVisible ? scrimAlpha : 0,
+  };
+
+  const contentStyle: AnimatedStyle<ViewStyle> = {
+    opacity: animatedVisible ? 1 : 0,
+  };
+
+  if (!visible && !visibleInternal) {
     return null;
   }
 
@@ -194,16 +206,7 @@ function Modal({
         disabled={!dismissable}
         onPress={dismissable ? onDismissCallback : undefined}
         importantForAccessibility="no"
-        style={[
-          styles.backdrop,
-          {
-            backgroundColor: theme.colors.scrim,
-            opacity: opacity.interpolate({
-              inputRange: [0, 1],
-              outputRange: [0, scrimAlpha],
-            }),
-          },
-        ]}
+        style={[styles.backdrop, backdropStyle, transitionStyle]}
         testID={`${testID}-backdrop`}
       />
       <View
@@ -218,8 +221,14 @@ function Modal({
         <Surface
           testID={`${testID}-surface`}
           theme={theme}
-          style={[{ opacity }, styles.content, contentContainerStyle]}
-          container
+          backgroundColor="transparent"
+          style={[
+            styles.content,
+            contentStyle,
+            transitionStyle,
+            contentContainerStyle,
+          ]}
+          elevation={elevation}
         >
           {children}
         </Surface>

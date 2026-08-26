@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import type { ColorValue, StyleProp, ViewProps, ViewStyle } from 'react-native';
 
 import AppbarContent from './AppbarContent';
 import {
   getAppbarBackgroundColor,
+  getAppbarBorders,
   modeAppbarHeight,
   renderAppbarContent,
   filterAppbarActions,
@@ -34,10 +35,9 @@ export type Props = Omit<Partial<ViewProps>, 'style'> & {
    */
   mode?: 'small' | 'medium' | 'large' | 'center-aligned';
   /**
-   * @supported Available in v5.x with theme version 3
-   * Whether Appbar background should have the elevation along with primary color pigment.
+   * Elevation level of the Appbar.
    */
-  elevated?: boolean;
+  elevation?: Elevation;
   /**
    * Safe area insets for the Appbar. This can be used to avoid elements like the navigation bar on Android and bottom safe area on iOS.
    */
@@ -51,7 +51,7 @@ export type Props = Omit<Partial<ViewProps>, 'style'> & {
    * @optional
    */
   theme?: ThemeProp;
-  style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+  style?: StyleProp<ViewStyle>;
 };
 
 /**
@@ -145,29 +145,25 @@ const Appbar = ({
   dark,
   style,
   mode = 'small',
-  elevated,
+  elevation = 0,
   safeAreaInsets,
   theme: themeOverrides,
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
   const flattenedStyle = StyleSheet.flatten(style);
-  const {
-    backgroundColor: customBackground,
-    elevation = elevated ? 2 : 0,
-    ...restStyle
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
-  } = (flattenedStyle || {}) as Exclude<typeof flattenedStyle, number> & {
-    elevation?: Elevation;
+  const { backgroundColor: customBackground, ...restStyle } = (flattenedStyle ||
+    {}) as Exclude<typeof flattenedStyle, number> & {
     backgroundColor?: ColorValue;
   };
 
   const backgroundColor = getAppbarBackgroundColor(
     theme,
     elevation,
-    customBackground,
-    elevated
+    customBackground
   );
+
+  const borderRadius = getAppbarBorders(restStyle);
 
   const isMode = (modeToCompare: AppbarModes) => {
     return mode === modeToCompare;
@@ -216,17 +212,17 @@ const Appbar = ({
 
   return (
     <Surface
+      {...borderRadius}
+      backgroundColor={backgroundColor}
       style={[
-        { backgroundColor },
-        styles.appbar,
         {
           height: modeAppbarHeight[mode],
         },
+        styles.appbar,
         insets,
         restStyle,
       ]}
       elevation={elevation}
-      container
       {...rest}
     >
       {shouldAddLeftSpacing ? <View style={spacingStyle} /> : null}

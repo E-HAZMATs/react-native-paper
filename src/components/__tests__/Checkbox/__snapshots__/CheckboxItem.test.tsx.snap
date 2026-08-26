@@ -135,6 +135,35 @@ exports[`can render leading checkbox control 1`] = `
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderRadius": 2,
+                  "borderWidth": 2,
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "borderColor": "rgba(73, 69, 79, 1)",
+                },
+              ]
+            }
             pointerEvents="none"
             style={
               [
@@ -157,6 +186,34 @@ exports[`can render leading checkbox control 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderRadius": 2,
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             pointerEvents="none"
             style={
               [
@@ -178,6 +235,31 @@ exports[`can render leading checkbox control 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                  "width": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "height": 18,
+                  "left": 0,
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "top": 0,
+                },
+              ]
+            }
             style={
               [
                 {
@@ -451,6 +533,35 @@ exports[`renders unchecked 1`] = `
           }
         >
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderRadius": 2,
+                  "borderWidth": 2,
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "borderColor": "rgba(73, 69, 79, 1)",
+                },
+              ]
+            }
             pointerEvents="none"
             style={
               [
@@ -473,6 +584,34 @@ exports[`renders unchecked 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "borderRadius": 2,
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "backgroundColor": "rgba(103, 80, 164, 1)",
+                },
+              ]
+            }
             pointerEvents="none"
             style={
               [
@@ -494,6 +633,31 @@ exports[`renders unchecked 1`] = `
             }
           />
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                  "width": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "height": 18,
+                  "left": 0,
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "top": 0,
+                },
+              ]
+            }
             style={
               [
                 {

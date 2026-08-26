@@ -1,7 +1,13 @@
 import * as React from 'react';
-import { Animated, StyleSheet, Pressable, View } from 'react-native';
-import type { GestureResponderEvent, StyleProp, ViewStyle } from 'react-native';
+import { StyleSheet, Pressable, View } from 'react-native';
+import type {
+  GestureResponderEvent,
+  StyleProp,
+  ViewProps,
+  ViewStyle,
+} from 'react-native';
 
+import type { AnimatedStyle } from 'react-native-reanimated';
 import useLatestCallback from 'use-latest-callback';
 
 import CardActions from './CardActions';
@@ -10,7 +16,7 @@ import CardCover from './CardCover';
 import CardTitle from './CardTitle';
 import { getCardColors } from './utils';
 import { useInternalTheme } from '../../core/theming';
-import type { $Omit, ThemeProp } from '../../types';
+import type { ThemeProp } from '../../types';
 import hasTouchHandler from '../../utils/hasTouchHandler';
 import { splitStyles } from '../../utils/splitStyles';
 import Surface from '../Surface';
@@ -30,11 +36,9 @@ type ContainedCardProps = {
   elevation?: never;
 };
 
-type HandlePressType = 'in' | 'out';
-
 type Mode = 'elevated' | 'outlined' | 'contained';
 
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = Omit<ViewProps, 'style'> & {
   /**
    * Mode of the Card.
    * - `elevated` - Card with elevation.
@@ -73,12 +77,12 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
   /**
    * Changes Card shadow and background on iOS and Android.
    */
-  elevation?: 0 | 1 | 2 | 3 | 4 | 5 | Animated.Value;
+  elevation?: 0 | 1 | 2 | 3 | 4 | 5;
   /**
    * Style of card's inner content.
    */
   contentStyle?: StyleProp<ViewStyle>;
-  style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+  style?: StyleProp<AnimatedStyle<ViewStyle>>;
   /**
    * @optional
    */
@@ -91,6 +95,10 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
    * Pass down accessible from card props to touchable
    */
   accessible?: boolean;
+  /**
+   * Reference to the card container.
+   */
+  ref?: React.Ref<View>;
 };
 
 /**
@@ -141,6 +149,7 @@ const Card = ({
   ...rest
 }: (OutlinedCardProps | ElevatedCardProps | ContainedCardProps) & Props) => {
   const theme = useInternalTheme(themeOverrides);
+
   const isMode = React.useCallback(
     (modeToCompare: Mode) => {
       return cardMode === modeToCompare;
@@ -155,34 +164,23 @@ const Card = ({
     onPressOut,
   });
 
-  const { current: elevation } = React.useRef<Animated.Value>(
-    new Animated.Value(cardElevation)
-  );
-  const { animation } = theme;
-
-  const animationDuration = 150 * animation.scale;
-
-  const runElevationAnimation = (pressType: HandlePressType) => {
-    if (isMode('contained')) {
-      return;
-    }
-
-    const isPressTypeIn = pressType === 'in';
-    Animated.timing(elevation, {
-      toValue: isPressTypeIn ? 2 : cardElevation,
-      duration: animationDuration,
-      useNativeDriver: false,
-    }).start();
-  };
+  const [pressed, setPressed] = React.useState(false);
+  const elevation = isMode('elevated') ? (pressed ? 2 : cardElevation) : 0;
 
   const handlePressIn = useLatestCallback((e: GestureResponderEvent) => {
     onPressIn?.(e);
-    runElevationAnimation('in');
+
+    if (isMode('elevated')) {
+      setPressed(true);
+    }
   });
 
   const handlePressOut = useLatestCallback((e: GestureResponderEvent) => {
     onPressOut?.(e);
-    runElevationAnimation('out');
+
+    if (isMode('elevated')) {
+      setPressed(false);
+    }
   });
 
   const total = React.Children.count(children);
@@ -232,15 +230,12 @@ const Card = ({
   return (
     <Surface
       ref={ref}
-      style={[
-        !isMode('elevated') && { backgroundColor },
-        borderRadiusCombinedStyles,
-        style,
-      ]}
+      {...borderRadiusCombinedStyles}
+      backgroundColor={!isMode('elevated') ? backgroundColor : undefined}
+      style={[{ borderColor }, style]}
       theme={theme}
-      elevation={isMode('elevated') ? elevation : 0}
+      elevation={elevation}
       testID={`${testID}-container`}
-      container
       {...rest}
     >
       {isMode('outlined') && (

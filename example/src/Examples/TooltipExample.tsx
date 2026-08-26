@@ -44,7 +44,7 @@ const TooltipExample = () => {
   React.useLayoutEffect(() => {
     navigation.setOptions({
       header: () => (
-        <Appbar.Header elevated>
+        <Appbar.Header>
           <Tooltip title="Go back">
             <Appbar.BackAction onPress={() => navigation.goBack()} />
           </Tooltip>

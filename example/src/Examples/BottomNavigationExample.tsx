@@ -86,7 +86,7 @@ const BottomNavigationExample = () => {
 
   return (
     <View style={styles.screen}>
-      <Appbar.Header elevated>
+      <Appbar.Header>
         <Appbar.BackAction onPress={() => navigation.goBack()} />
         <Appbar.Content title="Bottom Navigation" />
         <Menu

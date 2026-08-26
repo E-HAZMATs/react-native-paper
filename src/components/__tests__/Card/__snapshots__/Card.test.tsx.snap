@@ -3,28 +3,51 @@
 exports[`Card renders an outlined card 1`] = `
 <View
   collapsable={false}
-  style={
+  jestAnimatedProps={
     {
-      "backgroundColor": "rgba(254, 247, 255, 1)",
-      "borderRadius": 12,
-      "shadowColor": "rgba(0, 0, 0, 1)",
-      "shadowOffset": {
-        "height": 0,
-        "width": 0,
-      },
-      "shadowOpacity": 0,
-      "shadowRadius": 0,
+      "value": {},
     }
   }
-  testID="card-container-outer-layer"
->
-  <View
-    collapsable={false}
-    style={
+  jestAnimatedStyle={
+    {
+      "value": {},
+    }
+  }
+  jestInlineStyle={
+    [
+      {
+        "transitionDuration": 150,
+        "transitionProperty": [
+          "shadowOpacity",
+          "shadowOffset",
+          "shadowRadius",
+        ],
+        "transitionTimingFunction": "ease-in-out",
+      },
+      [
+        {
+          "borderColor": "rgba(121, 116, 126, 1)",
+        },
+        undefined,
+      ],
       {
         "backgroundColor": "rgba(254, 247, 255, 1)",
+        "borderBottomEndRadius": undefined,
+        "borderBottomLeftRadius": undefined,
+        "borderBottomRightRadius": undefined,
+        "borderBottomStartRadius": undefined,
+        "borderCurve": undefined,
+        "borderEndEndRadius": undefined,
+        "borderEndStartRadius": undefined,
         "borderRadius": 12,
-        "flex": undefined,
+        "borderStartEndRadius": undefined,
+        "borderStartStartRadius": undefined,
+        "borderTopEndRadius": undefined,
+        "borderTopLeftRadius": undefined,
+        "borderTopRightRadius": undefined,
+        "borderTopStartRadius": undefined,
+      },
+      {
         "shadowColor": "rgba(0, 0, 0, 1)",
         "shadowOffset": {
           "height": 0,
@@ -32,42 +55,181 @@ exports[`Card renders an outlined card 1`] = `
         },
         "shadowOpacity": 0,
         "shadowRadius": 0,
+      },
+    ]
+  }
+  style={
+    [
+      {},
+      {
+        "borderColor": "rgba(121, 116, 126, 1)",
+      },
+      undefined,
+      {
+        "backgroundColor": "rgba(254, 247, 255, 1)",
+        "borderBottomEndRadius": undefined,
+        "borderBottomLeftRadius": undefined,
+        "borderBottomRightRadius": undefined,
+        "borderBottomStartRadius": undefined,
+        "borderCurve": undefined,
+        "borderEndEndRadius": undefined,
+        "borderEndStartRadius": undefined,
+        "borderRadius": 12,
+        "borderStartEndRadius": undefined,
+        "borderStartStartRadius": undefined,
+        "borderTopEndRadius": undefined,
+        "borderTopLeftRadius": undefined,
+        "borderTopRightRadius": undefined,
+        "borderTopStartRadius": undefined,
+      },
+      {
+        "shadowColor": "rgba(0, 0, 0, 1)",
+        "shadowOffset": {
+          "height": 0,
+          "width": 0,
+        },
+        "shadowOpacity": 0,
+        "shadowRadius": 0,
+      },
+    ]
+  }
+  testID="card-container"
+>
+  <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
       }
     }
-    testID="card-container"
-  >
-    <View
-      pointerEvents="none"
-      style={
-        [
-          {
-            "borderColor": "rgba(121, 116, 126, 1)",
-          },
-          {
-            "borderWidth": 1,
-            "height": "100%",
-            "position": "absolute",
-            "width": "100%",
-            "zIndex": 2,
-          },
-          {
-            "borderRadius": 12,
-          },
-        ]
+    jestAnimatedStyle={
+      {
+        "value": {},
       }
-      testID="card-outline"
-    />
-    <View
-      style={
-        [
-          {
-            "flexShrink": 1,
+    }
+    jestInlineStyle={
+      [
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        {
+          "pointerEvents": "none",
+        },
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        {
+          "backgroundColor": "rgba(254, 247, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 12,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 0,
+            "width": 0,
           },
-          undefined,
-        ]
-      }
-      testID="card"
-    />
-  </View>
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+        },
+      ]
+    }
+    style={
+      [
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        {
+          "pointerEvents": "none",
+        },
+        {},
+        {
+          "backgroundColor": "rgba(254, 247, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 12,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+        },
+      ]
+    }
+    testID="card-container-shadow-layer"
+  />
+  <View
+    pointerEvents="none"
+    style={
+      [
+        {
+          "borderColor": "rgba(121, 116, 126, 1)",
+        },
+        {
+          "borderWidth": 1,
+          "height": "100%",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 2,
+        },
+        {
+          "borderRadius": 12,
+        },
+      ]
+    }
+    testID="card-outline"
+  />
+  <View
+    style={
+      [
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+    testID="card"
+  />
 </View>
 `;

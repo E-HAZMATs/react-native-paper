@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import type {
   ColorValue,
   GestureResponderEvent,
@@ -8,14 +8,14 @@ import type {
   ViewStyle,
 } from 'react-native';
 
-import Reanimated, {
+import Animated, {
   measure,
   useAnimatedRef,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
-import { scheduleOnUI } from 'react-native-worklets';
+import { isUIRuntime, scheduleOnUI } from 'react-native-worklets';
 
 import Shell from './Shell';
 import type { Size, Variant } from './tokens';
@@ -177,7 +177,7 @@ const Extended = ({
 
   const dimensions = getDimensions({ theme, size });
 
-  const offscreenLabelRef = useAnimatedRef<Reanimated.View>();
+  const offscreenLabelRef = useAnimatedRef<Animated.View>();
 
   const widthValue = useSharedValue(dimensions.width);
   const labelOpacity = useSharedValue(expanded ? 1 : 0);
@@ -190,15 +190,20 @@ const Extended = ({
       iconLabelGap,
       trailing,
     } = dimensions;
+
     const targetOpacity = expanded ? 1 : 0;
 
     if (reduceMotion) {
       scheduleOnUI(() => {
         'worklet';
-        const m = measure(offscreenLabelRef);
-        const lw = m?.width ?? 0;
+
+        const labelWidth =
+          Platform.OS === 'web' || isUIRuntime()
+            ? (measure(offscreenLabelRef)?.width ?? 0)
+            : 0;
+
         widthValue.value = expanded
-          ? leading + iconSize + iconLabelGap + lw + trailing
+          ? leading + iconSize + iconLabelGap + labelWidth + trailing
           : collapsedWidth;
         labelOpacity.value = targetOpacity;
       });
@@ -218,9 +223,15 @@ const Extended = ({
 
     scheduleOnUI(() => {
       'worklet';
-      const m = measure(offscreenLabelRef);
-      const lw = m?.width ?? 0;
-      const expandedWidth = leading + iconSize + iconLabelGap + lw + trailing;
+
+      const labelWidth =
+        Platform.OS === 'web' || isUIRuntime()
+          ? (measure(offscreenLabelRef)?.width ?? 0)
+          : 0;
+
+      const expandedWidth =
+        leading + iconSize + iconLabelGap + labelWidth + trailing;
+
       widthValue.value = withSpring(
         expanded ? expandedWidth : collapsedWidth,
         widthSpring
@@ -267,7 +278,7 @@ const Extended = ({
         testID={testID}
         theme={themeOverrides}
       />
-      <Reanimated.View
+      <Animated.View
         ref={offscreenLabelRef}
         style={styles.offscreenMeasure}
         importantForAccessibility="no-hide-descendants"
@@ -280,7 +291,7 @@ const Extended = ({
         >
           {label}
         </AnimatedText>
-      </Reanimated.View>
+      </Animated.View>
     </>
   );
 };

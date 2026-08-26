@@ -25,7 +25,7 @@ function Header({ navigation, route, options, back }: NativeStackHeaderProps) {
   const drawerNavigation = useNavigation('Home');
 
   return (
-    <Appbar.Header elevated>
+    <Appbar.Header>
       {back ? (
         <Appbar.BackAction onPress={() => navigation.goBack()} />
       ) : (

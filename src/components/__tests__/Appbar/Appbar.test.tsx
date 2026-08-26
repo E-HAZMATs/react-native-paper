@@ -1,12 +1,8 @@
-import { Animated } from 'react-native';
-
-import { describe, expect, it, jest } from '@jest/globals';
-import { act } from '@testing-library/react-native';
+import { describe, expect, it } from '@jest/globals';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { getTheme } from '../../../core/theming';
 import { render, screen } from '../../../test-utils';
-import { tokens } from '../../../theme/tokens';
 import Appbar from '../../Appbar';
 import {
   getAppbarBackgroundColor,
@@ -289,141 +285,74 @@ describe('getAppbarColors', () => {
     ).toBe(customBackground);
   });
 
-  it('should return v3 light color if theme version is 3', () => {
+  it('returns the light surface container color for nonzero elevation', () => {
     expect(getAppbarBackgroundColor(getTheme(), elevation)).toBe(
-      tokens.md.ref.palette.neutral98
+      getTheme().colors.surfaceContainer
     );
   });
 
-  it('should return v3 dark color if theme version is 3', () => {
+  it('returns the dark surface container color for nonzero elevation', () => {
     expect(getAppbarBackgroundColor(getTheme(true), elevation)).toBe(
-      tokens.md.ref.palette.neutral6
+      getTheme(true).colors.surfaceContainer
     );
   });
 });
 
-describe('animated value changes correctly', () => {
-  it('appbar animated value changes correctly', async () => {
-    const value = new Animated.Value(1);
+describe('style props', () => {
+  it('appbar style is applied correctly', async () => {
     await render(
-      <Appbar testID="appbar" style={[{ transform: [{ scale: value }] }]}>
+      <Appbar testID="appbar" style={{ marginTop: 12 }}>
         <Appbar.Action icon="menu" />
       </Appbar>
     );
-    expect(screen.getByTestId('appbar-outer-layer')).toHaveStyle({
-      transform: [{ scale: 1 }],
-    });
 
-    Animated.timing(value, {
-      toValue: 1.5,
-      useNativeDriver: false,
-      duration: 200,
-    }).start();
-
-    await act(() => {
-      jest.advanceTimersByTime(200);
-    });
-
-    expect(screen.getByTestId('appbar-outer-layer')).toHaveStyle({
-      transform: [{ scale: 1.5 }],
+    expect(screen.getByTestId('appbar')).toHaveStyle({
+      marginTop: 12,
     });
   });
 
-  it('action animated value changes correctly', async () => {
-    const value = new Animated.Value(1);
+  it('action style is applied correctly', async () => {
     await render(
       <Appbar>
         <Appbar.Action
           icon="menu"
-          style={[{ transform: [{ scale: value }] }]}
+          style={{ marginTop: 12 }}
           testID="appbar-action"
         />
       </Appbar>
     );
-    expect(
-      screen.getByTestId('appbar-action-container-outer-layer')
-    ).toHaveStyle({
-      transform: [{ scale: 1 }],
-    });
 
-    Animated.timing(value, {
-      toValue: 1.5,
-      useNativeDriver: false,
-      duration: 200,
-    }).start();
-
-    await act(() => {
-      jest.advanceTimersByTime(200);
-    });
-
-    expect(
-      screen.getByTestId('appbar-action-container-outer-layer')
-    ).toHaveStyle({
-      transform: [{ scale: 1.5 }],
+    expect(screen.getByTestId('appbar-action-container')).toHaveStyle({
+      marginTop: 12,
     });
   });
 
-  it('back action animated value changes correctly', async () => {
-    const value = new Animated.Value(1);
+  it('back action style is applied correctly', async () => {
     await render(
       <Appbar>
         <Appbar.BackAction
-          style={[{ transform: [{ scale: value }] }]}
+          style={{ marginTop: 12 }}
           testID="appbar-back-action"
         />
       </Appbar>
     );
-    expect(
-      screen.getByTestId('appbar-back-action-container-outer-layer')
-    ).toHaveStyle({
-      transform: [{ scale: 1 }],
-    });
 
-    Animated.timing(value, {
-      toValue: 1.5,
-      useNativeDriver: false,
-      duration: 200,
-    }).start();
-
-    await act(() => {
-      jest.advanceTimersByTime(200);
-    });
-
-    expect(
-      screen.getByTestId('appbar-back-action-container-outer-layer')
-    ).toHaveStyle({
-      transform: [{ scale: 1.5 }],
+    expect(screen.getByTestId('appbar-back-action-container')).toHaveStyle({
+      marginTop: 12,
     });
   });
 
-  it('header animated value changes correctly', async () => {
-    const value = new Animated.Value(1);
+  it('header style is applied correctly', async () => {
     await render(
       <SafeAreaProvider>
-        <Appbar.Header
-          style={[{ transform: [{ scale: value }] }]}
-          testID="appbar-header"
-        >
+        <Appbar.Header style={{ marginTop: 12 }} testID="appbar-header">
           {null}
         </Appbar.Header>
       </SafeAreaProvider>
     );
-    expect(screen.getByTestId('appbar-header-outer-layer')).toHaveStyle({
-      transform: [{ scale: 1 }],
-    });
 
-    Animated.timing(value, {
-      toValue: 1.5,
-      useNativeDriver: false,
-      duration: 200,
-    }).start();
-
-    await act(() => {
-      jest.advanceTimersByTime(200);
-    });
-
-    expect(screen.getByTestId('appbar-header-outer-layer')).toHaveStyle({
-      transform: [{ scale: 1.5 }],
+    expect(screen.getByTestId('appbar-header')).toHaveStyle({
+      marginTop: 12,
     });
   });
 
@@ -437,7 +366,8 @@ describe('animated value changes correctly', () => {
         </Appbar.Header>
       </SafeAreaProvider>
     );
-    expect(screen.getByTestId('appbar-header-root-layer')).toHaveStyle(style);
+
+    expect(screen.getByTestId('appbar-header')).toHaveStyle(style);
   });
 
   describe('getAppbarBorders', () => {

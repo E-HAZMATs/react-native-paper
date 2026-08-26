@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ColorValue, StyleProp, ViewStyle } from 'react-native';
-import { StyleSheet, Animated } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { white } from '../../theme/colors';
 import type { InternalTheme, ThemeProp } from '../../types';
@@ -23,16 +23,15 @@ const borderStyleProperties = [
 
 export const getAppbarBackgroundColor = (
   theme: InternalTheme,
-  _elevation: number,
-  customBackground?: ColorValue,
-  elevated?: boolean
+  elevation: number,
+  customBackground?: ColorValue
 ) => {
   const { colors } = theme;
   if (customBackground) {
     return customBackground;
   }
 
-  if (elevated) {
+  if (elevation) {
     return colors.surfaceContainer;
   }
 
@@ -54,19 +53,14 @@ export const getAppbarColor = ({
   return undefined;
 };
 
-export const getAppbarBorders = (
-  style:
-    | Animated.Value
-    | Animated.AnimatedInterpolation<string | number>
-    | Animated.WithAnimatedObject<ViewStyle>
-) => {
-  const borders: Record<string, number> = {};
+export const getAppbarBorders = (style: ViewStyle) => {
+  let borders: ViewStyle = {};
 
   for (const property of borderStyleProperties) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
-    const value = style[property as keyof typeof style];
-    if (value) {
-      borders[property] = value;
+    const value = style[property];
+
+    if (typeof value === 'number' || typeof value === 'string') {
+      borders = { ...borders, [property]: value };
     }
   }
 

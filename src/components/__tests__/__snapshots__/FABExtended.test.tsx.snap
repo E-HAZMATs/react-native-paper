@@ -3,15 +3,15 @@
 exports[`renders extended FAB collapsed 1`] = `
 <>
   <View
-    style={
-      [
-        undefined,
-        {
-          "transformOrigin": "center",
-        },
-        {
-          "backgroundColor": "rgba(234, 221, 255, 1)",
-          "borderRadius": 16,
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
           "height": 56,
           "opacity": 1,
           "transform": [
@@ -20,6 +20,45 @@ exports[`renders extended FAB collapsed 1`] = `
             },
           ],
           "width": 56,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        [
+          undefined,
+          {
+            "transformOrigin": "center",
+          },
+          {
+            "pointerEvents": "auto",
+          },
+        ],
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": "16",
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
         },
         {
           "shadowColor": "rgba(0, 0, 0, 1)",
@@ -30,14 +69,186 @@ exports[`renders extended FAB collapsed 1`] = `
           "shadowOpacity": 0.19,
           "shadowRadius": 4.75,
         },
+      ]
+    }
+    style={
+      [
+        {},
+        undefined,
+        {
+          "transformOrigin": "center",
+        },
+        {
+          "height": 56,
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 56,
+        },
         {
           "pointerEvents": "auto",
+        },
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 16,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 3.33,
+            "width": 0,
+          },
+          "shadowOpacity": 0.19,
+          "shadowRadius": 4.75,
         },
       ]
     }
     testID="extended-floating-action-button-container"
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {
+            "transitionDuration": 150,
+            "transitionProperty": [
+              "shadowOpacity",
+              "shadowOffset",
+              "shadowRadius",
+            ],
+            "transitionTimingFunction": "ease-in-out",
+          },
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": "16",
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {},
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": 16,
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      testID="extended-floating-action-button-container-shadow-layer"
+    />
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderRadius": 16,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "height": "100%",
+            "overflow": "hidden",
+            "width": "100%",
+          },
+        ]
+      }
       style={
         [
           {
@@ -143,6 +354,29 @@ exports[`renders extended FAB collapsed 1`] = `
             plus
           </Text>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 0,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "marginStart": 8,
+                },
+                {
+                  "pointerEvents": "none",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -183,6 +417,36 @@ exports[`renders extended FAB collapsed 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "borderRadius": 21,
+            "opacity": 0,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderWidth": 3,
+            "bottom": -5,
+            "left": -5,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": -5,
+            "top": -5,
+          },
+          {
+            "borderColor": "rgba(98, 91, 113, 1)",
+          },
+        ]
+      }
       style={
         [
           {
@@ -207,14 +471,36 @@ exports[`renders extended FAB collapsed 1`] = `
   </View>
   <View
     aria-hidden={true}
+    collapsable={false}
+    forwardedRef={[Function]}
     importantForAccessibility="no-hide-descendants"
-    style={
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
       {
         "alignSelf": "flex-start",
         "opacity": 0,
         "pointerEvents": "none",
         "position": "absolute",
       }
+    }
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+      ]
     }
   >
     <Text
@@ -242,15 +528,15 @@ exports[`renders extended FAB collapsed 1`] = `
 exports[`renders extended FAB expanded 1`] = `
 <>
   <View
-    style={
-      [
-        undefined,
-        {
-          "transformOrigin": "center",
-        },
-        {
-          "backgroundColor": "rgba(234, 221, 255, 1)",
-          "borderRadius": 16,
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
           "height": 56,
           "opacity": 1,
           "transform": [
@@ -259,6 +545,45 @@ exports[`renders extended FAB expanded 1`] = `
             },
           ],
           "width": 56,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        [
+          undefined,
+          {
+            "transformOrigin": "center",
+          },
+          {
+            "pointerEvents": "auto",
+          },
+        ],
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": "16",
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
         },
         {
           "shadowColor": "rgba(0, 0, 0, 1)",
@@ -269,14 +594,186 @@ exports[`renders extended FAB expanded 1`] = `
           "shadowOpacity": 0.19,
           "shadowRadius": 4.75,
         },
+      ]
+    }
+    style={
+      [
+        {},
+        undefined,
+        {
+          "transformOrigin": "center",
+        },
+        {
+          "height": 56,
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 56,
+        },
         {
           "pointerEvents": "auto",
+        },
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 16,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 3.33,
+            "width": 0,
+          },
+          "shadowOpacity": 0.19,
+          "shadowRadius": 4.75,
         },
       ]
     }
     testID="extended-floating-action-button-container"
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {
+            "transitionDuration": 150,
+            "transitionProperty": [
+              "shadowOpacity",
+              "shadowOffset",
+              "shadowRadius",
+            ],
+            "transitionTimingFunction": "ease-in-out",
+          },
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": "16",
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {},
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": 16,
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      testID="extended-floating-action-button-container-shadow-layer"
+    />
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderRadius": 16,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "height": "100%",
+            "overflow": "hidden",
+            "width": "100%",
+          },
+        ]
+      }
       style={
         [
           {
@@ -382,6 +879,29 @@ exports[`renders extended FAB expanded 1`] = `
             plus
           </Text>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "marginStart": 8,
+                },
+                {
+                  "pointerEvents": "none",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -422,6 +942,36 @@ exports[`renders extended FAB expanded 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "borderRadius": 21,
+            "opacity": 0,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderWidth": 3,
+            "bottom": -5,
+            "left": -5,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": -5,
+            "top": -5,
+          },
+          {
+            "borderColor": "rgba(98, 91, 113, 1)",
+          },
+        ]
+      }
       style={
         [
           {
@@ -446,14 +996,36 @@ exports[`renders extended FAB expanded 1`] = `
   </View>
   <View
     aria-hidden={true}
+    collapsable={false}
+    forwardedRef={[Function]}
     importantForAccessibility="no-hide-descendants"
-    style={
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
       {
         "alignSelf": "flex-start",
         "opacity": 0,
         "pointerEvents": "none",
         "position": "absolute",
       }
+    }
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+      ]
     }
   >
     <Text
@@ -481,15 +1053,15 @@ exports[`renders extended FAB expanded 1`] = `
 exports[`renders extended FAB large size 1`] = `
 <>
   <View
-    style={
-      [
-        undefined,
-        {
-          "transformOrigin": "center",
-        },
-        {
-          "backgroundColor": "rgba(234, 221, 255, 1)",
-          "borderRadius": 28,
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
           "height": 96,
           "opacity": 1,
           "transform": [
@@ -498,6 +1070,45 @@ exports[`renders extended FAB large size 1`] = `
             },
           ],
           "width": 96,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        [
+          undefined,
+          {
+            "transformOrigin": "center",
+          },
+          {
+            "pointerEvents": "auto",
+          },
+        ],
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": "28",
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
         },
         {
           "shadowColor": "rgba(0, 0, 0, 1)",
@@ -508,14 +1119,186 @@ exports[`renders extended FAB large size 1`] = `
           "shadowOpacity": 0.19,
           "shadowRadius": 4.75,
         },
+      ]
+    }
+    style={
+      [
+        {},
+        undefined,
+        {
+          "transformOrigin": "center",
+        },
+        {
+          "height": 96,
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 96,
+        },
         {
           "pointerEvents": "auto",
+        },
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 28,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 3.33,
+            "width": 0,
+          },
+          "shadowOpacity": 0.19,
+          "shadowRadius": 4.75,
         },
       ]
     }
     testID="extended-floating-action-button-container"
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {
+            "transitionDuration": 150,
+            "transitionProperty": [
+              "shadowOpacity",
+              "shadowOffset",
+              "shadowRadius",
+            ],
+            "transitionTimingFunction": "ease-in-out",
+          },
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": "28",
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {},
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": 28,
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      testID="extended-floating-action-button-container-shadow-layer"
+    />
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderRadius": 28,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "height": "100%",
+            "overflow": "hidden",
+            "width": "100%",
+          },
+        ]
+      }
       style={
         [
           {
@@ -621,6 +1404,29 @@ exports[`renders extended FAB large size 1`] = `
             plus
           </Text>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "marginStart": 16,
+                },
+                {
+                  "pointerEvents": "none",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -661,6 +1467,36 @@ exports[`renders extended FAB large size 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "borderRadius": 33,
+            "opacity": 0,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderWidth": 3,
+            "bottom": -5,
+            "left": -5,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": -5,
+            "top": -5,
+          },
+          {
+            "borderColor": "rgba(98, 91, 113, 1)",
+          },
+        ]
+      }
       style={
         [
           {
@@ -685,14 +1521,36 @@ exports[`renders extended FAB large size 1`] = `
   </View>
   <View
     aria-hidden={true}
+    collapsable={false}
+    forwardedRef={[Function]}
     importantForAccessibility="no-hide-descendants"
-    style={
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
       {
         "alignSelf": "flex-start",
         "opacity": 0,
         "pointerEvents": "none",
         "position": "absolute",
       }
+    }
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+      ]
     }
   >
     <Text
@@ -720,15 +1578,15 @@ exports[`renders extended FAB large size 1`] = `
 exports[`renders extended FAB medium size 1`] = `
 <>
   <View
-    style={
-      [
-        undefined,
-        {
-          "transformOrigin": "center",
-        },
-        {
-          "backgroundColor": "rgba(234, 221, 255, 1)",
-          "borderRadius": 20,
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
           "height": 80,
           "opacity": 1,
           "transform": [
@@ -737,6 +1595,45 @@ exports[`renders extended FAB medium size 1`] = `
             },
           ],
           "width": 80,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        [
+          undefined,
+          {
+            "transformOrigin": "center",
+          },
+          {
+            "pointerEvents": "auto",
+          },
+        ],
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": "20",
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
         },
         {
           "shadowColor": "rgba(0, 0, 0, 1)",
@@ -747,14 +1644,186 @@ exports[`renders extended FAB medium size 1`] = `
           "shadowOpacity": 0.19,
           "shadowRadius": 4.75,
         },
+      ]
+    }
+    style={
+      [
+        {},
+        undefined,
+        {
+          "transformOrigin": "center",
+        },
+        {
+          "height": 80,
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 80,
+        },
         {
           "pointerEvents": "auto",
+        },
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 20,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 3.33,
+            "width": 0,
+          },
+          "shadowOpacity": 0.19,
+          "shadowRadius": 4.75,
         },
       ]
     }
     testID="extended-floating-action-button-container"
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {
+            "transitionDuration": 150,
+            "transitionProperty": [
+              "shadowOpacity",
+              "shadowOffset",
+              "shadowRadius",
+            ],
+            "transitionTimingFunction": "ease-in-out",
+          },
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": "20",
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {},
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": 20,
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      testID="extended-floating-action-button-container-shadow-layer"
+    />
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderRadius": 20,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "height": "100%",
+            "overflow": "hidden",
+            "width": "100%",
+          },
+        ]
+      }
       style={
         [
           {
@@ -860,6 +1929,29 @@ exports[`renders extended FAB medium size 1`] = `
             plus
           </Text>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "marginStart": 12,
+                },
+                {
+                  "pointerEvents": "none",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -900,6 +1992,36 @@ exports[`renders extended FAB medium size 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "borderRadius": 25,
+            "opacity": 0,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderWidth": 3,
+            "bottom": -5,
+            "left": -5,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": -5,
+            "top": -5,
+          },
+          {
+            "borderColor": "rgba(98, 91, 113, 1)",
+          },
+        ]
+      }
       style={
         [
           {
@@ -924,14 +2046,36 @@ exports[`renders extended FAB medium size 1`] = `
   </View>
   <View
     aria-hidden={true}
+    collapsable={false}
+    forwardedRef={[Function]}
     importantForAccessibility="no-hide-descendants"
-    style={
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
       {
         "alignSelf": "flex-start",
         "opacity": 0,
         "pointerEvents": "none",
         "position": "absolute",
       }
+    }
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+      ]
     }
   >
     <Text
@@ -959,15 +2103,82 @@ exports[`renders extended FAB medium size 1`] = `
 exports[`renders extended FAB not visible 1`] = `
 <>
   <View
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
+          "height": 56,
+          "opacity": 0,
+          "transform": [
+            {
+              "scale": 0,
+            },
+          ],
+          "width": 56,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        [
+          undefined,
+          {
+            "transformOrigin": "center",
+          },
+          {
+            "pointerEvents": "none",
+          },
+        ],
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": "16",
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 3.33,
+            "width": 0,
+          },
+          "shadowOpacity": 0.19,
+          "shadowRadius": 4.75,
+        },
+      ]
+    }
     style={
       [
+        {},
         undefined,
         {
           "transformOrigin": "center",
         },
         {
-          "backgroundColor": "rgba(234, 221, 255, 1)",
-          "borderRadius": 16,
           "height": 56,
           "opacity": 0,
           "transform": [
@@ -978,22 +2189,166 @@ exports[`renders extended FAB not visible 1`] = `
           "width": 56,
         },
         {
+          "pointerEvents": "none",
+        },
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": 16,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
           "shadowColor": "rgba(0, 0, 0, 1)",
           "shadowOffset": {
             "height": 3.33,
             "width": 0,
           },
-          "shadowOpacity": 0,
+          "shadowOpacity": 0.19,
           "shadowRadius": 4.75,
-        },
-        {
-          "pointerEvents": "none",
         },
       ]
     }
     testID="extended-floating-action-button-container"
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {
+            "transitionDuration": 150,
+            "transitionProperty": [
+              "shadowOpacity",
+              "shadowOffset",
+              "shadowRadius",
+            ],
+            "transitionTimingFunction": "ease-in-out",
+          },
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": "16",
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {},
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": 16,
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      testID="extended-floating-action-button-container-shadow-layer"
+    />
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderRadius": 16,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "height": "100%",
+            "overflow": "hidden",
+            "width": "100%",
+          },
+        ]
+      }
       style={
         [
           {
@@ -1099,6 +2454,29 @@ exports[`renders extended FAB not visible 1`] = `
             plus
           </Text>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "marginStart": 8,
+                },
+                {
+                  "pointerEvents": "none",
+                },
+              ]
+            }
             style={
               [
                 {
@@ -1139,6 +2517,36 @@ exports[`renders extended FAB not visible 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "borderRadius": 21,
+            "opacity": 0,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderWidth": 3,
+            "bottom": -5,
+            "left": -5,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": -5,
+            "top": -5,
+          },
+          {
+            "borderColor": "rgba(98, 91, 113, 1)",
+          },
+        ]
+      }
       style={
         [
           {
@@ -1163,14 +2571,36 @@ exports[`renders extended FAB not visible 1`] = `
   </View>
   <View
     aria-hidden={true}
+    collapsable={false}
+    forwardedRef={[Function]}
     importantForAccessibility="no-hide-descendants"
-    style={
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
       {
         "alignSelf": "flex-start",
         "opacity": 0,
         "pointerEvents": "none",
         "position": "absolute",
       }
+    }
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+      ]
     }
   >
     <Text
@@ -1198,15 +2628,15 @@ exports[`renders extended FAB not visible 1`] = `
 exports[`renders extended FAB transitioning to collapsed 1`] = `
 <>
   <View
-    style={
-      [
-        undefined,
-        {
-          "transformOrigin": "center",
-        },
-        {
-          "backgroundColor": "rgba(234, 221, 255, 1)",
-          "borderRadius": 16,
+    collapsable={false}
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {
           "height": 56,
           "opacity": 1,
           "transform": [
@@ -1215,6 +2645,45 @@ exports[`renders extended FAB transitioning to collapsed 1`] = `
             },
           ],
           "width": 56,
+        },
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "transitionDuration": 150,
+          "transitionProperty": [
+            "shadowOpacity",
+            "shadowOffset",
+            "shadowRadius",
+          ],
+          "transitionTimingFunction": "ease-in-out",
+        },
+        [
+          undefined,
+          {
+            "transformOrigin": "center",
+          },
+          {
+            "pointerEvents": "auto",
+          },
+        ],
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderRadius": "16",
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
         },
         {
           "shadowColor": "rgba(0, 0, 0, 1)",
@@ -1225,14 +2694,184 @@ exports[`renders extended FAB transitioning to collapsed 1`] = `
           "shadowOpacity": 0.19,
           "shadowRadius": 4.75,
         },
+      ]
+    }
+    style={
+      [
+        {},
+        undefined,
+        {
+          "transformOrigin": "center",
+        },
+        {
+          "height": 56,
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 56,
+        },
         {
           "pointerEvents": "auto",
+        },
+        {
+          "backgroundColor": "rgba(234, 221, 255, 1)",
+          "borderBottomEndRadius": undefined,
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderBottomStartRadius": undefined,
+          "borderCurve": undefined,
+          "borderEndEndRadius": undefined,
+          "borderEndStartRadius": undefined,
+          "borderStartEndRadius": undefined,
+          "borderStartStartRadius": undefined,
+          "borderTopEndRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "borderTopStartRadius": undefined,
+        },
+        {
+          "shadowColor": "rgba(0, 0, 0, 1)",
+          "shadowOffset": {
+            "height": 3.33,
+            "width": 0,
+          },
+          "shadowOpacity": 0.19,
+          "shadowRadius": 4.75,
         },
       ]
     }
     testID="extended-floating-action-button-container"
   >
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {
+            "transitionDuration": 150,
+            "transitionProperty": [
+              "shadowOpacity",
+              "shadowOffset",
+              "shadowRadius",
+            ],
+            "transitionTimingFunction": "ease-in-out",
+          },
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderRadius": "16",
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "pointerEvents": "none",
+          },
+          {},
+          {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderBottomEndRadius": undefined,
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderBottomStartRadius": undefined,
+            "borderCurve": undefined,
+            "borderEndEndRadius": undefined,
+            "borderEndStartRadius": undefined,
+            "borderStartEndRadius": undefined,
+            "borderStartStartRadius": undefined,
+            "borderTopEndRadius": undefined,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "borderTopStartRadius": undefined,
+          },
+          {
+            "shadowColor": "rgba(0, 0, 0, 1)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.039,
+            "shadowRadius": 1.5,
+          },
+        ]
+      }
+      testID="extended-floating-action-button-container-shadow-layer"
+    />
+    <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(234, 221, 255, 1)",
+            "borderRadius": 16,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "height": "100%",
+            "overflow": "hidden",
+            "width": "100%",
+          },
+        ]
+      }
       style={
         [
           {
@@ -1338,13 +2977,36 @@ exports[`renders extended FAB transitioning to collapsed 1`] = `
             plus
           </Text>
           <View
+            collapsable={false}
+            jestAnimatedProps={
+              {
+                "value": {},
+              }
+            }
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "opacity": 1,
+                },
+              }
+            }
+            jestInlineStyle={
+              [
+                {
+                  "marginStart": 8,
+                },
+                {
+                  "pointerEvents": "none",
+                },
+              ]
+            }
             style={
               [
                 {
                   "marginStart": 8,
                 },
                 {
-                  "opacity": 0,
+                  "opacity": 1,
                 },
                 {
                   "pointerEvents": "none",
@@ -1378,6 +3040,36 @@ exports[`renders extended FAB transitioning to collapsed 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      jestAnimatedProps={
+        {
+          "value": {},
+        }
+      }
+      jestAnimatedStyle={
+        {
+          "value": {
+            "borderRadius": 21,
+            "opacity": 0,
+          },
+        }
+      }
+      jestInlineStyle={
+        [
+          {
+            "borderWidth": 3,
+            "bottom": -5,
+            "left": -5,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": -5,
+            "top": -5,
+          },
+          {
+            "borderColor": "rgba(98, 91, 113, 1)",
+          },
+        ]
+      }
       style={
         [
           {
@@ -1402,14 +3094,36 @@ exports[`renders extended FAB transitioning to collapsed 1`] = `
   </View>
   <View
     aria-hidden={true}
+    collapsable={false}
+    forwardedRef={[Function]}
     importantForAccessibility="no-hide-descendants"
-    style={
+    jestAnimatedProps={
+      {
+        "value": {},
+      }
+    }
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
       {
         "alignSelf": "flex-start",
         "opacity": 0,
         "pointerEvents": "none",
         "position": "absolute",
       }
+    }
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+        },
+      ]
     }
   >
     <Text

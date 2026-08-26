@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, Platform, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import type {
   ColorValue,
   GestureResponderEvent,
@@ -7,13 +7,16 @@ import type {
   Role,
   StyleProp,
   TextStyle,
+  ViewProps,
   ViewStyle,
 } from 'react-native';
+
+import type { AnimatedStyle } from 'react-native-reanimated';
 
 import { getButtonColors, getButtonTouchableRippleStyle } from './utils';
 import type { ButtonMode } from './utils';
 import { useInternalTheme } from '../../core/theming';
-import type { $Omit, ThemeProp } from '../../types';
+import type { ThemeProp } from '../../types';
 import hasTouchHandler from '../../utils/hasTouchHandler';
 import { splitStyles } from '../../utils/splitStyles';
 import ActivityIndicator from '../ActivityIndicator';
@@ -24,7 +27,7 @@ import TouchableRipple from '../TouchableRipple/TouchableRipple';
 import type { Props as TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
 import Text from '../Typography/Text';
 
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = Omit<ViewProps, 'style'> & {
   /**
    * Mode of the button. You can change the mode to adjust the styling to give it desired emphasis.
    * - `text` - flat button without background or outline, used for the lowest priority actions, especially when presenting multiple options.
@@ -122,7 +125,7 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
    * Sets additional distance outside of element in which a press can be detected.
    */
   hitSlop?: TouchableRippleProps['hitSlop'];
-  style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+  style?: StyleProp<AnimatedStyle<ViewStyle>>;
   /**
    * Style for the button text.
    */
@@ -192,15 +195,15 @@ const Button = ({
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
+
   const isMode = React.useCallback(
     (modeToCompare: ButtonMode) => {
       return mode === modeToCompare;
     },
     [mode]
   );
-  const { animation } = theme;
+
   const uppercase = uppercaseProp ?? false;
-  const isWeb = Platform.OS === 'web';
 
   const hasPassedTouchHandler = hasTouchHandler({
     onPress,
@@ -213,43 +216,27 @@ const Button = ({
   const initialElevation = 1;
   const activeElevation = 2;
 
-  const { current: elevation } = React.useRef<Animated.Value>(
-    new Animated.Value(isElevationEntitled ? initialElevation : 0)
-  );
+  const [pressed, setPressed] = React.useState(false);
 
-  React.useEffect(() => {
-    // Workaround not to call setValue on Animated.Value, because it breaks styles.
-    // https://github.com/callstack/react-native-paper/issues/4559
-    Animated.timing(elevation, {
-      toValue: isElevationEntitled ? initialElevation : 0,
-      duration: 0,
-      useNativeDriver: true,
-    });
-  }, [isElevationEntitled, elevation, initialElevation]);
+  const elevation = isElevationEntitled
+    ? pressed
+      ? activeElevation
+      : initialElevation
+    : 0;
 
   const handlePressIn = (e: GestureResponderEvent) => {
     onPressIn?.(e);
+
     if (isMode('elevated')) {
-      const { scale } = animation;
-      Animated.timing(elevation, {
-        toValue: activeElevation,
-        duration: 200 * scale,
-        useNativeDriver:
-          isWeb || Platform.constants.reactNativeVersion.minor <= 72,
-      }).start();
+      setPressed(true);
     }
   };
 
   const handlePressOut = (e: GestureResponderEvent) => {
     onPressOut?.(e);
+
     if (isMode('elevated')) {
-      const { scale } = animation;
-      Animated.timing(elevation, {
-        toValue: initialElevation,
-        duration: 150 * scale,
-        useNativeDriver:
-          isWeb || Platform.constants.reactNativeVersion.minor <= 72,
-      }).start();
+      setPressed(false);
     }
   };
 
@@ -321,9 +308,18 @@ const Button = ({
       {...rest}
       ref={ref}
       testID={`${testID}-container`}
-      style={[styles.button, compact && styles.compact, buttonStyle, style]}
+      backgroundColor={buttonStyle.backgroundColor}
+      {...touchableStyle}
+      style={[
+        styles.button,
+        compact && styles.compact,
+        {
+          borderColor,
+          borderWidth,
+        },
+        style,
+      ]}
       elevation={elevation}
-      container
     >
       {backgroundOpacity < 1 && (
         <View
